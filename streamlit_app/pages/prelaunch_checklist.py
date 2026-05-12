@@ -1949,10 +1949,9 @@ if should_generate_prelaunch_result:
                 st.success("체크리스트 생성이 완료되었습니다.")
             except Exception as e:
                 st.error("체크리스트 생성 중 오류가 발생했습니다.")
-                st.info("API 키, 모델명, 네트워크 상태를 확인한 뒤 다시 시도해주세요.")
-                if show_debug_info:
-                    with st.expander("상세 오류 확인", expanded=False):
-                        st.exception(e)
+                st.warning(f"오류 타입: {type(e).__name__}")
+                st.code(repr(e), language="text")
+                st.exception(e)
                 st.stop()
 elif cached_result is not None and "prelaunch_llm_result" not in st.session_state:
     st.session_state["prelaunch_llm_result"] = cached_result
