@@ -1,0 +1,208 @@
+{
+  "title": "출시 전 체크리스트",
+  "condition_summary": "장르 Action, 가격대 0-5, Steam 태그 -, 플레이 방식 - 조건을 기준으로 생성했습니다.",
+  "data_summary": "조건 매칭 게임 21개, 분석 리뷰 189개와 조건별 반복 이슈 근거를 사용했습니다.",
+  "tag_dna_summary": "입력된 Steam 태그가 없어 태그 DNA 참고 정보는 제외했습니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임플레이 루프 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 58개 게임(85.3%)에서 반복 언급되었다. Steam 비추천 맥락은 37개 게임에서 확인되었다. High urgency는 29개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 30분 플레이 흐름 점검, 핵심 재미가 드러나는 시점 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임플레이 루프 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 37개 게임(62.7%)에서 반복 언급되었다. Steam 비추천 맥락은 21개 게임에서 확인되었다. High urgency는 17개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 30분 플레이 흐름 점검, 핵심 재미가 드러나는 시점 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "그래픽/사운드 요소가 출시 초반 유저에게 강점으로 충분히 전달되는가?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 41개 게임(60.3%)에서 반복 언급되었다. Steam 비추천 맥락은 18개 게임에서 확인되었다. High urgency는 17개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "비주얼 가독성, 사운드 피드백, 분위기 전달력 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "UI/UX 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 39개 게임(57.4%)에서 반복 언급되었다. Steam 비추천 맥락은 23개 게임에서 확인되었다. High urgency는 18개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "신규 유저 기준 튜토리얼 테스트, 목표 안내 문구 확인, 메뉴 이동 동선 점검",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "콘텐츠 분량 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 38개 게임(55.9%)에서 반복 언급되었다. Steam 비추천 맥락은 18개 게임에서 확인되었다. High urgency는 13개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 콘텐츠 밀도, 반복 구간, 플레이 목표의 다양성 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "난이도 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 37개 게임(54.4%)에서 반복 언급되었다. Steam 비추천 맥락은 16개 게임에서 확인되었다. High urgency는 13개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 난이도 곡선, 실패 구간, 재도전 피로도 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "그래픽/사운드 요소가 출시 초반 유저에게 강점으로 충분히 전달되는가?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 29개 게임(49.2%)에서 반복 언급되었다. Steam 비추천 맥락은 10개 게임에서 확인되었다. High urgency는 9개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "비주얼 가독성, 사운드 피드백, 분위기 전달력 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "난이도 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 26개 게임(44.1%)에서 반복 언급되었다. Steam 비추천 맥락은 9개 게임에서 확인되었다. High urgency는 7개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 난이도 곡선, 실패 구간, 재도전 피로도 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "콘텐츠 분량 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 26개 게임(44.1%)에서 반복 언급되었다. Steam 비추천 맥락은 7개 게임에서 확인되었다. High urgency는 4개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 콘텐츠 밀도, 반복 구간, 플레이 목표의 다양성 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "UI/UX 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 25개 게임(42.4%)에서 반복 언급되었다. Steam 비추천 맥락은 12개 게임에서 확인되었다. High urgency는 12개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "신규 유저 기준 튜토리얼 테스트, 목표 안내 문구 확인, 메뉴 이동 동선 점검",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "밸런스 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 26개 게임(38.2%)에서 반복 언급되었다. Steam 비추천 맥락은 18개 게임에서 확인되었다. High urgency는 12개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 성장 속도, 적 체력, 보상량, 반복 플레이 피로도 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "버그 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "버그",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 19개 게임(32.2%)에서 반복 언급되었다. Steam 비추천 맥락은 8개 게임에서 확인되었다. High urgency는 11개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 구간 반복 플레이 테스트, 저장/불러오기 테스트, 크래시 로그 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "버그 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "버그",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 35개 게임(51.5%)에서 반복 언급되었다. Steam 비추천 맥락은 14개 게임에서 확인되었다. High urgency는 19개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "초반 구간 반복 플레이 테스트, 저장/불러오기 테스트, 크래시 로그 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "조작감 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "장르 'Action' 조건에서 68개 게임 중 34개 게임(50.0%)에서 반복 언급되었다. Steam 비추천 맥락은 16개 게임에서 확인되었다. High urgency는 18개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "키보드/마우스/패드 입력 테스트, 전투·이동·상호작용 반응 속도 확인",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "강화 요소",
+      "category": "가격 대비 가치",
+      "check_question": "가격/가치 요소가 출시 초반 유저에게 강점으로 충분히 전달되는가?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 17개 게임(28.8%)에서 반복 언급되었다. Steam 비추천 맥락은 5개 게임에서 확인되었다. High urgency는 2개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "예상 플레이타임, 콘텐츠 분량, 가격대 유사 게임과 비교",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "조작감 문제가 출시 초반 부정 리뷰로 이어지지 않도록 사전에 점검했는가?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "가격대 '0-5' 조건에서 59개 게임 중 12개 게임(20.3%)에서 반복 언급되었다. Steam 비추천 맥락은 6개 게임에서 확인되었다. High urgency는 5개 게임에서 확인되었지만 보조 참고 지표로만 해석한다.",
+      "how_to_check": "키보드/마우스/패드 입력 테스트, 전투·이동·상호작용 반응 속도 확인",
+      "source_conditions": [
+        "price_group=0-5"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "이 결과는 성공 예측이 아니라 유사 게임 리뷰에서 반복된 이슈를 바탕으로 한 출시 전 점검 초안입니다.",
+    "최종 점검 여부는 실제 게임 기획, QA 결과, 개발 일정과 함께 판단해야 합니다."
+  ],
+  "final_summary": "LLM 호출 대신 사전 계산된 반복 이슈 근거를 규칙 기반으로 정리했습니다."
+}

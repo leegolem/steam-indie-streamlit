@@ -30,7 +30,6 @@ from utils.postlaunch_engine import (
     make_postlaunch_validation_report_markdown,
 )
 
-
 # ============================================================
 # 대시보드 스타일 보조 함수
 # ============================================================
@@ -39,6 +38,31 @@ def inject_dashboard_style() -> None:
     st.markdown(
         """
         <style>
+        .stApp { background: radial-gradient(circle at top left, rgba(30,64,175,0.14), transparent 34%), linear-gradient(180deg, #0b1018 0%, #070b12 100%); color: #f8fafc; }
+        [data-testid="stHeader"] { background: rgba(11,16,24,0.72); }
+        [data-testid="stHeader"] {
+            background-color: rgba(11, 16, 24, 0.86) !important;
+        }
+        [data-testid="stSidebar"], section[data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #0f172a 0%, #0b1018 100%) !important;
+            color: #f8fafc !important;
+        }
+        .stMarkdown, .stText, p, label, span, div {
+            color: inherit;
+        }
+        .stButton > button {
+            color: #f8fafc !important;
+            border-color: rgba(148, 163, 184, 0.38) !important;
+        }
+        .stButton > button[kind="secondary"],
+        .stButton > button[data-testid="baseButton-secondary"] {
+            background-color: #111827 !important;
+        }
+        div[data-testid="stDataFrame"],
+        div[data-testid="stTable"] {
+            background-color: #0b0f17 !important;
+            color: #f8fafc !important;
+        }
         .dash-card {
             background: rgba(255,255,255,0.045);
             border: 1px solid rgba(255,255,255,0.12);
@@ -124,16 +148,30 @@ def inject_dashboard_style() -> None:
         }
         .ops-title { font-size: 1.08rem; font-weight: 800; margin-bottom: 8px; }
         .mini-label { font-size: 0.78rem; font-weight: 800; color: rgba(250,250,250,0.58); margin: 12px 0 4px 0; }
-        .mini-text { font-size: 0.9rem; line-height: 1.58; color: rgba(250,250,250,0.84); }
+        .mini-text { font-size: 0.9rem; line-height: 1.58; color: rgba(250,250,250,0.84); white-space: pre-line; }
         </style>
         """,
         unsafe_allow_html=True,
     )
 
+def apply_dark_chart_theme(chart: alt.Chart) -> alt.Chart:
+    """Streamlit 라이트 모드에서도 그래프가 다크 배경으로 보이도록 고정합니다."""
+    return (
+        chart
+        .properties(background="#0b0f17")
+        .configure_view(fill="#0b0f17", strokeOpacity=0)
+        .configure_axis(
+            labelColor="#cbd5e1",
+            titleColor="#f8fafc",
+            gridColor="#273142",
+            domainColor="#3a4252",
+            tickColor="#3a4252",
+        )
+        .configure_title(color="#f8fafc")
+    )
 
 def _html_text(value) -> str:
     return html.escape(clean_pipeline_terms("" if value is None or pd.isna(value) else str(value)))
-
 
 def render_metric_card(label: str, value: str, caption: str = "", tone: str = "neutral") -> None:
     """요약 KPI 카드를 출력합니다. tone 값으로 중요도에 따른 색상만 최소 적용합니다."""
@@ -149,7 +187,6 @@ def render_metric_card(label: str, value: str, caption: str = "", tone: str = "n
         unsafe_allow_html=True,
     )
 
-
 def render_section_lead(title: str, body: str) -> None:
     st.markdown(
         f"""
@@ -161,23 +198,17 @@ def render_section_lead(title: str, body: str) -> None:
         unsafe_allow_html=True,
     )
 
-
 def _priority_class(priority: str) -> str:
     return {"상": "high", "중": "mid", "하": "low"}.get(str(priority), "neutral")
-
 
 def _priority_display(priority: str) -> str:
     return {"상": "우선 점검", "중": "추가 검토", "하": "참고"}.get(str(priority), str(priority))
 
-
 def _priority_raw(display_value: str) -> str:
     return {"우선 점검": "상", "추가 검토": "중", "참고": "하"}.get(str(display_value), str(display_value))
 
-
 def render_badge(label: str, tone: str = "neutral") -> str:
     return f'<span class="badge badge-{tone}">{html.escape(str(label))}</span>'
-
-
 
 def notify_detail_toggle_change(enabled: bool, page_key: str, detail_label: str) -> None:
     """상세 근거·검증 보기 상태가 바뀔 때 토스트 알림을 띄웁니다."""
@@ -194,8 +225,6 @@ def notify_detail_toggle_change(enabled: bool, page_key: str, detail_label: str)
         except Exception:
             st.caption(message)
     st.session_state[prev_key] = enabled
-
-
 
 def _split_tag_values(value) -> list[str]:
     """쉼표/줄바꿈/리스트 형태의 태그 값을 화면 필터용 목록으로 정리합니다."""
@@ -226,7 +255,6 @@ def _split_tag_values(value) -> list[str]:
             tags.append(tag)
     return tags
 
-
 def _strategy_issue_tag_values(row: pd.Series) -> list[str]:
     """패치·운영 카드에 표시하고 필터에 사용할 이슈 태그를 정합니다.
 
@@ -246,7 +274,6 @@ def _strategy_issue_tag_values(row: pd.Series) -> list[str]:
 
     return ["이슈 태그"]
 
-
 def _available_strategy_issue_tag_options(df: pd.DataFrame) -> list[str]:
     """패치·운영 카드 필터에 표시할 이슈 태그 목록을 만듭니다."""
     if df is None or df.empty:
@@ -258,13 +285,11 @@ def _available_strategy_issue_tag_options(df: pd.DataFrame) -> list[str]:
 
     return sorted(pd.Series(options).dropna().astype(str).str.strip().replace("", pd.NA).dropna().unique().tolist())
 
-
 def _row_has_selected_strategy_issue_tag(row: pd.Series, selected_tags: list[str]) -> bool:
     if not selected_tags:
         return True
     row_tags = set(_strategy_issue_tag_values(row))
     return bool(row_tags.intersection(set(selected_tags)))
-
 
 # ============================================================
 # 화면 표시 보조 함수
@@ -324,7 +349,6 @@ def clean_pipeline_terms(text: str) -> str:
         out = out.replace(old, new)
     return out
 
-
 def _count_chart_df(df: pd.DataFrame, column: str, order: list[str] | None = None, label: str = "항목") -> pd.DataFrame:
     if df is None or df.empty or column not in df.columns:
         return pd.DataFrame(columns=[label, "건수"])
@@ -337,7 +361,6 @@ def _count_chart_df(df: pd.DataFrame, column: str, order: list[str] | None = Non
     out = counts.reset_index()
     out.columns = [label, "건수"]
     return out
-
 
 def render_bar_chart(
     df: pd.DataFrame,
@@ -410,8 +433,7 @@ def render_bar_chart(
         )
     )
 
-    st.altair_chart(chart, use_container_width=True)
-
+    st.altair_chart(apply_dark_chart_theme(chart), use_container_width=True)
 
 def render_horizontal_bar_chart(
     df: pd.DataFrame,
@@ -453,8 +475,7 @@ def render_horizontal_bar_chart(
         .properties(height=height)
     )
 
-    st.altair_chart(chart, use_container_width=True)
-
+    st.altair_chart(apply_dark_chart_theme(chart), use_container_width=True)
 
 def _cell_class_name(column_name: str) -> str:
     class_map = {
@@ -476,7 +497,6 @@ def _cell_class_name(column_name: str) -> str:
         "의미": "col-long-text",
     }
     return class_map.get(str(column_name), "")
-
 
 def _format_table_cell_text(column_name: str, value) -> str:
     if isinstance(value, list):
@@ -518,7 +538,6 @@ def _format_table_cell_text(column_name: str, value) -> str:
             lines.append(line)
 
     return "<br>".join(html.escape(line) for line in lines)
-
 
 def _column_width_px(column_name: str) -> int:
     width_map = {
@@ -567,7 +586,6 @@ def _column_width_px(column_name: str) -> int:
         "개선 제안 후보": 420,
     }
     return width_map.get(str(column_name), 160)
-
 
 def render_wrapped_table(df: pd.DataFrame, height_px: int = 520) -> None:
     """긴 문장이 있는 표를 줄바꿈 가능한 HTML 표로 출력합니다."""
@@ -690,7 +708,6 @@ ${tbody_html}
     )
     components.html(table_html, height=height_px + 24, scrolling=False)
 
-
 def make_postlaunch_classification_guide_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
     priority_guide = pd.DataFrame(
         [
@@ -721,25 +738,30 @@ def make_postlaunch_classification_guide_tables() -> tuple[pd.DataFrame, pd.Data
 
     return priority_guide, action_guide
 
-
 # ============================================================
 # 출시 후 패치·운영 필터 도움말
 # ============================================================
 
 POSTLAUNCH_FILTER_HELP = {
-    "response_type": (
-        "리뷰에서 발견된 이슈를 패치·운영 관점의 대응 방식으로 나눠 봅니다. "
-        "즉시 확인, 단기 개선, 장기 검토, 강점 유지로 구분합니다."
-    ),
     "priority": (
-        "패치·운영에서 어떤 항목을 먼저 확인할지 선택합니다. "
-        "우선 점검은 반복성과 부정 맥락이 큰 항목입니다."
+        "패치·운영에서 어떤 항목을 먼저 확인할지 선택합니다.\n\n"
+        "- 우선 점검: 반복성과 부정 맥락이 커서 패치·운영에서 먼저 확인할 필요가 큰 항목입니다.\n"
+        "- 추가 검토: 반복 근거는 있지만 패치 범위나 운영 상황에 따라 검토할 항목입니다.\n"
+        "- 참고: 우선도는 낮지만 이후 업데이트나 회의에서 참고할 수 있는 항목입니다."
+    ),
+    "response_type": (
+        "리뷰에서 발견된 이슈를 패치·운영 관점의 대응 방식으로 나눠 봅니다.\n\n"
+        "- 즉시 확인: 버그, 진행 불가, 크래시처럼 QA 재현이나 원인 확인이 먼저 필요한 항목입니다.\n"
+        "- 단기 개선: 다음 패치나 업데이트에서 비교적 빠르게 개선을 검토할 수 있는 항목입니다.\n"
+        "- 운영 커뮤니케이션 개선: 공지, 패치 노트, 알려진 이슈 안내, 커뮤니티 응답으로 오해나 불만을 줄일 수 있는 항목입니다.\n"
+        "- 장기 검토: 콘텐츠 구조, 밸런스, 반복 플레이 피로도처럼 중장기적으로 검토할 항목입니다.\n"
+        "- 강점 유지: 유저가 긍정적으로 평가한 요소로, 이후 업데이트에서도 유지하거나 강화할 항목입니다."
     ),
     "issue_tag": (
-        "버그, 최적화, UI·UX, 밸런스, 콘텐츠처럼 리뷰에서 추출된 세부 이슈를 기준으로 결과를 좁혀 봅니다."
+        "리뷰에서 추출된 세부 이슈를 기준으로 패치·운영 제안 카드를 좁혀 봅니다.\n\n"
+        "예: 버그, 최적화, UI/UX, 밸런스, 콘텐츠, 조작감, 가격·가치, 그래픽·사운드"
     ),
 }
-
 
 def render_postlaunch_filter_guide() -> None:
     """출시 후 필터 기준을 사용자에게 설명합니다."""
@@ -764,7 +786,6 @@ def render_postlaunch_filter_guide() -> None:
             "추가 검토: 반복 근거는 있지만, 패치 범위나 운영 상황에 따라 검토할 항목입니다.\n"
             "참고: 우선도는 낮지만, 이후 업데이트나 회의에서 참고할 수 있는 항목입니다.",
         )
-
 
 def render_postlaunch_validation_guide(validation_df: pd.DataFrame) -> None:
     """출시 후 패치·운영 생성 결과가 어떤 기준으로 점검되는지 설명합니다."""
@@ -812,9 +833,6 @@ def render_postlaunch_validation_guide(validation_df: pd.DataFrame) -> None:
         **검증 결과 요약:** {result_message}
         """
     )
-
-
-
 
 def build_postlaunch_top_issue_chart_df(
     strategy_df: pd.DataFrame,
@@ -905,7 +923,6 @@ def build_postlaunch_top_issue_chart_df(
     ).head(top_n)
     return chart_df[columns]
 
-
 def render_postlaunch_top_issue_chart(chart_df: pd.DataFrame) -> None:
     """출시 전 우선 점검 이슈 TOP 10과 같은 형태로 패치·운영 우선 이슈를 출력합니다."""
     if chart_df is None or chart_df.empty:
@@ -952,7 +969,7 @@ def render_postlaunch_top_issue_chart(chart_df: pd.DataFrame) -> None:
         )
         .properties(height=340, padding={"top": 8, "left": 8, "right": 8, "bottom": 8})
     )
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(apply_dark_chart_theme(chart), use_container_width=True)
 
 def render_postlaunch_overview(
     analysis_overview: dict,
@@ -1048,12 +1065,11 @@ def render_postlaunch_overview(
         st.subheader("상위 반복 이슈 TOP 10")
         render_horizontal_bar_chart(top_issue_df, "이슈", "관련 리뷰 수", "이슈", "관련 리뷰 수", height=360)
 
-
 def render_strategy_cards(
     strategy_df: pd.DataFrame,
     evidence_df: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
-    """패치·운영 제안 탭을 KPI → 그래프 → 필터 기준 안내 → 필터 → 카드 순서로 출력합니다."""
+    """패치·운영 제안 탭을 KPI → 그래프 → 필터 → 카드 순서로 출력합니다."""
     render_section_lead(
         "우선 점검할 이슈와 대응 방향을 카드로 확인합니다.",
         "아래 요약과 그래프는 전체 패치·운영 제안 항목을 기준으로 먼저 보여줍니다.      \n"
@@ -1117,13 +1133,7 @@ def render_strategy_cards(
     st.divider()
 
     # --------------------------------------------------------
-    # 3) 필터 기준 안내
-    # --------------------------------------------------------
-    with st.expander("필터 기준 안내 보기", expanded=False):
-        render_postlaunch_filter_guide()
-
-    # --------------------------------------------------------
-    # 4) 카드 필터
+    # 3) 카드 필터
     # --------------------------------------------------------
     st.markdown("#### 패치·운영 카드 필터")
     filter_col1, filter_col2, filter_col3 = st.columns(3)
@@ -1194,36 +1204,39 @@ def render_strategy_cards(
                 *issue_badges,
             ]
         )
-        st.markdown(
-            f"""
-            <div class="ops-card {p_class}">
-                <div>{badges}</div>
-                <div class="ops-title">{idx + 1}. {_html_text(row.get('이슈', ''))}</div>
-                <div class="mini-label">왜 확인해야 하나요?</div>
-                <div class="mini-text">{_html_text(row.get('근거 요약', '-'))}</div>
-                <div class="mini-label">권장 대응</div>
-                <div class="mini-text">{_html_text(row.get('패치·운영 방향', '-'))}</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        # HTML 문자열 앞에 공백이 많이 들어가면 Streamlit Markdown에서 코드블록처럼 표시될 수 있습니다.
+        # 따라서 카드 내부 HTML은 들여쓰기 없이 조립합니다.
+        detail_parts = ""
+        if row.get("세부 실행안", ""):
+            detail_parts += (
+                '<div class="mini-label">권장 실행 방법</div>'
+                f'<div class="mini-text">{_html_text(row.get("세부 실행안", ""))}</div>'
+            )
+        if row.get("기대 효과", ""):
+            detail_parts += (
+                '<div class="mini-label">기대 효과</div>'
+                f'<div class="mini-text">{_html_text(row.get("기대 효과", ""))}</div>'
+            )
+        if row.get("주의사항", ""):
+            detail_parts += (
+                '<div class="mini-label">확인 전 주의사항</div>'
+                f'<div class="mini-text">{_html_text(row.get("주의사항", ""))}</div>'
+            )
 
-        with st.expander("실행 방법과 기대 효과·주의사항 보기", expanded=False):
-            if row.get("세부 실행안", ""):
-                st.markdown("**권장 실행 방법**")
-                st.write(row.get("세부 실행안", ""))
-            detail_col1, detail_col2 = st.columns(2)
-            with detail_col1:
-                if row.get("기대 효과", ""):
-                    st.markdown("**기대 효과**")
-                    st.write(row.get("기대 효과", ""))
-            with detail_col2:
-                if row.get("주의사항", ""):
-                    st.markdown("**확인 전 주의사항**")
-                    st.info(row.get("주의사항", ""))
+        card_html = (
+            f'<div class="ops-card {p_class}">'
+            f'<div>{badges}</div>'
+            f'<div class="ops-title">{idx + 1}. {_html_text(row.get("이슈", ""))}</div>'
+            '<div class="mini-label">왜 확인해야 하나요?</div>'
+            f'<div class="mini-text">{_html_text(row.get("근거 요약", "-"))}</div>'
+            '<div class="mini-label">권장 대응</div>'
+            f'<div class="mini-text">{_html_text(row.get("패치·운영 방향", "-"))}</div>'
+            f'{detail_parts}'
+            '</div>'
+        )
+        st.markdown(card_html, unsafe_allow_html=True)
 
     return card_df
-
 
 # ============================================================
 # 페이지 제목
@@ -1231,40 +1244,33 @@ def render_strategy_cards(
 inject_dashboard_style()
 
 st.title("🛠️ 출시 후 패치·운영 전략")
-
-render_section_lead(
-    "이 분석으로 할 수 있는 것",
-    """- 현재 리뷰에서 반복되는 불만과 강점을 확인할 수 있습니다.
-- QA로 먼저 재현해야 할 문제와 단기 개선 항목을 구분할 수 있습니다.
-- 패치 회의나 운영 회의에서 사용할 우선순위 초안을 만들 수 있습니다.""",
-)
-
-render_section_lead(
-    "사용 흐름",
-    """1. 분석할 게임을 선택합니다.
-2. [패치·운영 방향 생성] 버튼을 눌러 리뷰 기반 제안 카드를 생성합니다.
-3. 점검 우선도, 대응 방식, 이슈 태그로 먼저 볼 항목을 확인합니다.
-4. 필요한 경우 사이드바의 [상세 근거·검증 보기]를 켜서 반복 이슈와 리뷰 샘플을 확인합니다.""",
-)
+st.caption("출시 후 Steam 리뷰를 바탕으로, 먼저 확인할 패치·운영 이슈를 제안합니다.")
 
 with st.expander("이 페이지 설명 자세히 보기", expanded=False):
     st.markdown(
         """
-이 페이지는 이미 출시된 게임의 **리뷰 기반 패치·운영 우선순위**를 정리하기 위한 화면입니다.
+#### 이 페이지는 무엇을 하나요?
+이미 출시된 게임의 Steam 리뷰를 바탕으로 반복되는 문제와 강점을 정리하고, 패치·운영에서 먼저 확인할 항목을 제안 카드로 보여줍니다.
 
-분석할 게임을 선택하면  
-Steam 리뷰에서 유저가 긍정적으로 평가한 요소와 반복적으로 불만을 제기한 요소를 확인하고,  
-패치나 운영에서 먼저 점검해야 할 항목을 정리합니다.
+#### 사용 순서
+1. **분석할 게임을 선택합니다.**  
+   출시 후 리뷰가 수집된 게임 중 확인할 대상을 선택합니다.
+2. **[패치·운영 방향 생성] 버튼을 누릅니다.**  
+   선택한 게임의 리뷰 기반 제안 카드가 생성됩니다.
+3. **제안 카드를 확인합니다.**  
+   우선 점검, 추가 검토, 참고 항목을 보고 어떤 이슈를 먼저 확인할지 정리합니다.
+4. **필요하면 필터로 좁혀 봅니다.**  
+   점검 우선도, 대응 방식, 이슈 태그를 선택해 필요한 카드만 확인합니다.
+5. **근거가 필요하면 상세 근거·검증 보기를 켭니다.**  
+   반복 이슈 근거, 리뷰 샘플, 생성 결과 검증 내용을 추가로 확인할 수 있습니다.
 
-**이럴 때 사용합니다**
-- 출시 후 유저들이 어떤 부분에서 불만을 느끼는지 빠르게 확인하고 싶을 때
-- 버그, 밸런스, 콘텐츠, UI·UX, 최적화 문제 중 무엇을 먼저 봐야 할지 정리하고 싶을 때
-- 패치 회의나 운영 회의에서 사용할 개선 우선순위 초안이 필요할 때
+#### 해석할 때 주의할 점
+- 이 결과는 패치 방향을 확정하는 도구가 아니라 우선 검토 항목을 정리하는 참고 자료입니다.
+- 최종 판단에는 개발 일정, 팀 리소스, 실제 버그 재현 여부, 커뮤니티 상황을 함께 반영해야 합니다.
         """
     )
 
 st.divider()
-
 
 # ============================================================
 # 사이드바 설정
@@ -1319,7 +1325,6 @@ issue_summary = data["issue_summary"]
 evidence_base = data["evidence_base"]
 tableau_source = data["tableau_source"]
 
-
 # ============================================================
 # 데이터 로드 정보: 개발자 정보 보기에서만 노출
 # ============================================================
@@ -1342,7 +1347,6 @@ if show_debug_info:
         with col4:
             st.metric("원천 데이터", f"{len(tableau_source):,}행")
 
-
 # ============================================================
 # 게임 선택 및 제안 생성
 # ============================================================
@@ -1358,14 +1362,12 @@ game_label_options = [NO_GAME_OPTION] + game_options["game_label"].tolist()
 if st.session_state.get("postlaunch_game_select") not in game_label_options:
     st.session_state["postlaunch_game_select"] = NO_GAME_OPTION
 
-
 def reset_postlaunch_input_state() -> None:
     """게임 선택과 생성 결과를 함께 초기화합니다."""
     for key in list(st.session_state.keys()):
         if str(key).startswith("postlaunch_llm_result_"):
             del st.session_state[key]
     st.session_state["postlaunch_game_select"] = NO_GAME_OPTION
-
 
 st.header("1. 분석 대상 게임 선택 및 제안 생성")
 st.caption("분석할 게임을 선택하고 **패치·운영 방향 생성** 버튼을 누르면 제안 카드가 생성됩니다.")
@@ -1404,7 +1406,6 @@ if selected_label == NO_GAME_OPTION:
 selected_row = game_options[game_options["game_label"] == selected_label].iloc[0]
 selected_appid = int(selected_row["appid"])
 selected_game_name = str(selected_row["game_name"])
-
 
 # ============================================================
 # 선택 게임 데이터 생성
@@ -1491,7 +1492,6 @@ validation_warnings = validate_patch_ops_result(result_dict, selected_evidence) 
 validation_df = make_validation_result_df(validation_warnings)
 strategy_df = make_patch_ops_strategy_table(result_dict) if result_dict else None
 
-
 # ============================================================
 # 탭 출력
 # ============================================================
@@ -1507,7 +1507,6 @@ if show_detail_sections:
     )
 else:
     (tab_strategy,) = st.tabs(["🛠️ 패치·운영 제안"])
-
 
 # ------------------------------------------------------------
 # Tab 1. 패치·운영 제안
@@ -1528,7 +1527,6 @@ with tab_strategy:
             file_name=f"postlaunch_patch_ops_strategy_{selected_appid}.csv",
             mime="text/csv",
         )
-
 
 # ------------------------------------------------------------
 # Tab 2. 근거 보기
@@ -1558,9 +1556,6 @@ if show_detail_sections:
                 "패치·운영 제안에 사용된 이슈별 근거 데이터를 표로 확인합니다.  \n"
                 "반복 리뷰 수, 부정·혼합 맥락, Steam 비추천, 짧은 플레이타임 부정 반응 등을 함께 보며 제안의 근거를 검토할 수 있습니다."
             )
-            with st.expander("필터 기준 안내 보기", expanded=False):
-                render_postlaunch_filter_guide()
-
             filter_col1, filter_col2, filter_col3 = st.columns(3)
 
             with filter_col1:
@@ -1625,7 +1620,6 @@ if show_detail_sections:
                 file_name=f"postlaunch_evidence_{selected_appid}.csv",
                 mime="text/csv",
             )
-
 
 # ------------------------------------------------------------
 # Tab 3. 리뷰·검증
