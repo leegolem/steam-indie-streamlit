@@ -149,6 +149,180 @@ def inject_dashboard_style() -> None:
         .ops-title { font-size: 1.08rem; font-weight: 800; margin-bottom: 8px; }
         .mini-label { font-size: 0.78rem; font-weight: 800; color: rgba(250,250,250,0.58); margin: 12px 0 4px 0; }
         .mini-text { font-size: 0.9rem; line-height: 1.58; color: rgba(250,250,250,0.84); white-space: pre-line; }
+
+
+        /* ============================================================
+           출시 후 패치·운영 카드 리디자인
+           - 좌측: 이슈 요약 / 중앙: 확인 이유·권장 대응 / 우측: 근거 요약
+           ============================================================ */
+        .ops-card {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(220px, 0.7fr) minmax(360px, 1.15fr) 330px;
+            gap: 24px;
+            align-items: center;
+            overflow: hidden;
+            margin: 0 0 8px 0;
+            padding: 18px 20px 18px 22px;
+            border-radius: 18px;
+            border: 1px solid rgba(96,165,250,0.32);
+            border-left: 4px solid #60a5fa;
+            background:
+                radial-gradient(circle at 8% 16%, rgba(56,189,248,0.10), transparent 28%),
+                linear-gradient(135deg, rgba(15,23,42,0.88), rgba(2,8,23,0.94));
+            box-shadow: 0 18px 42px rgba(2,8,23,0.28), inset 0 0 0 1px rgba(255,255,255,0.025);
+        }
+        .ops-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(148,163,184,0.026) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148,163,184,0.026) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+            opacity: 0.74;
+        }
+        .ops-card > * {
+            position: relative;
+            z-index: 1;
+        }
+        .ops-card.high {
+            border-color: rgba(248,113,113,0.50);
+            border-left-color: #ff4d5a;
+            background:
+                radial-gradient(circle at 5% 10%, rgba(248,113,113,0.16), transparent 30%),
+                linear-gradient(135deg, rgba(52,12,24,0.78), rgba(2,8,23,0.94));
+            box-shadow: 0 20px 54px rgba(127,29,29,0.20), 0 0 28px rgba(239,68,68,0.10), inset 0 0 0 1px rgba(255,255,255,0.025);
+        }
+        .ops-card.mid {
+            border-color: rgba(245,158,11,0.46);
+            border-left-color: #f59e0b;
+            background:
+                radial-gradient(circle at 5% 10%, rgba(245,158,11,0.14), transparent 30%),
+                linear-gradient(135deg, rgba(42,28,9,0.78), rgba(2,8,23,0.94));
+        }
+        .ops-card.low {
+            border-color: rgba(96,165,250,0.46);
+            border-left-color: #3b82f6;
+            background:
+                radial-gradient(circle at 5% 10%, rgba(59,130,246,0.16), transparent 30%),
+                linear-gradient(135deg, rgba(15,23,42,0.88), rgba(2,8,23,0.94));
+        }
+        .ops-left, .ops-center {
+            min-width: 0;
+        }
+        .ops-title {
+            font-size: 1.35rem;
+            font-weight: 920;
+            color: #f8fafc;
+            margin: 6px 0 0 0;
+            letter-spacing: -0.045em;
+        }
+        .ops-mini-label {
+            font-size: 0.76rem;
+            font-weight: 900;
+            color: rgba(226,232,240,0.72);
+            margin: 0 0 5px 0;
+        }
+        .ops-mini-text {
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: #e5e7eb;
+            margin: 0;
+            white-space: pre-line;
+        }
+        .ops-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding-left: 2px;
+        }
+        .ops-center-block {
+            min-width: 0;
+        }
+        .ops-evidence-box {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 108px;
+            padding: 15px 18px;
+            border-radius: 14px;
+            border: 1px solid rgba(96,165,250,0.30);
+            background: linear-gradient(135deg, rgba(15,23,42,0.78), rgba(8,47,73,0.16));
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.022), 0 0 26px rgba(59,130,246,0.08);
+        }
+        .ops-evidence-title {
+            color: #93c5fd;
+            font-size: 0.98rem;
+            font-weight: 920;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(96,165,250,0.24);
+        }
+        .ops-evidence-line {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+            color: #e2e8f0;
+            font-size: 0.86rem;
+            line-height: 1.45;
+            margin: 4px 0;
+        }
+        .ops-evidence-name {
+            color: #cbd5e1;
+        }
+        .ops-evidence-value {
+            color: #f8fafc;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+        .ops-detail-box {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr 0.9fr;
+            gap: 18px;
+            margin-top: 2px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(148,163,184,0.18);
+        }
+        .ops-detail-block {
+            min-width: 0;
+            padding: 13px 15px;
+            border-radius: 13px;
+            border: 1px solid rgba(148,163,184,0.16);
+            background: rgba(15,23,42,0.42);
+        }
+        .ops-detail-label {
+            font-size: 0.78rem;
+            font-weight: 900;
+            color: #93c5fd;
+            margin: 0 0 8px 0;
+        }
+        .ops-detail-text {
+            font-size: 0.88rem;
+            line-height: 1.58;
+            color: #e5e7eb;
+            white-space: pre-line;
+        }
+        .ops-detail-caution {
+            border-color: rgba(56,189,248,0.26);
+            background: rgba(14,116,144,0.16);
+        }
+        @media (max-width: 1250px) {
+            .ops-card {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .ops-center {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+            .ops-detail-box { grid-template-columns: 1fr; }
+        }
+
         </style>
         """,
         unsafe_allow_html=True,
@@ -1065,6 +1239,47 @@ def render_postlaunch_overview(
         st.subheader("상위 반복 이슈 TOP 10")
         render_horizontal_bar_chart(top_issue_df, "이슈", "관련 리뷰 수", "이슈", "관련 리뷰 수", height=360)
 
+
+
+def _extract_count_from_text(text: str, patterns: list[str]) -> str:
+    """근거 요약 문장에서 특정 수치를 추출합니다."""
+    clean = clean_pipeline_terms(str(text or ""))
+    for pattern in patterns:
+        match = re.search(pattern, clean, flags=re.IGNORECASE)
+        if match:
+            return match.group(1).replace(",", "")
+    return "-"
+
+def _postlaunch_evidence_counts_for_card(evidence_summary: str) -> dict[str, str]:
+    """패치·운영 카드 우측 근거 박스에 표시할 핵심 수치를 정리합니다."""
+    text = clean_pipeline_terms(str(evidence_summary or ""))
+    affected = _extract_count_from_text(
+        text,
+        [
+            r"(?:영향|관련)\s*리뷰\s*(?:수)?\s*([0-9,]+)\s*개",
+            r"리뷰\s*(?:수)?\s*([0-9,]+)\s*개",
+        ],
+    )
+    steam_negative = _extract_count_from_text(
+        text,
+        [
+            r"Steam\s*비추천\s*(?:맥락|리뷰)?\s*([0-9,]+)\s*개",
+            r"비추천\s*(?:맥락|리뷰)?\s*([0-9,]+)\s*개",
+        ],
+    )
+    early_negative = _extract_count_from_text(
+        text,
+        [
+            r"(?:초반|초기|짧은\s*플레이타임|짧은\s*플레이\s*타임).*?(?:부정|혼합|반응).*?([0-9,]+)\s*개",
+            r"(?:부정\s*반응|부정·혼합).*?([0-9,]+)\s*개",
+        ],
+    )
+    return {
+        "영향 리뷰 수": affected,
+        "Steam 비추천 맥락": steam_negative,
+        "초기 플레이타임 부정 반응": early_negative,
+    }
+
 def render_strategy_cards(
     strategy_df: pd.DataFrame,
     evidence_df: pd.DataFrame | None = None,
@@ -1196,7 +1411,7 @@ def render_strategy_cards(
     for idx, row in card_df.reset_index(drop=True).iterrows():
         priority = row.get("우선 검토 수준", "-")
         p_class = _priority_class(priority)
-        issue_badges = [render_badge(tag, "neutral") for tag in _strategy_issue_tag_values(row)[:3]]
+        issue_badges = [render_badge(tag, "neutral") for tag in _strategy_issue_tag_values(row)[:2]]
         badges = "".join(
             [
                 render_badge(_priority_display(priority), p_class),
@@ -1204,38 +1419,68 @@ def render_strategy_cards(
                 *issue_badges,
             ]
         )
-        # HTML 문자열 앞에 공백이 많이 들어가면 Streamlit Markdown에서 코드블록처럼 표시될 수 있습니다.
-        # 따라서 카드 내부 HTML은 들여쓰기 없이 조립합니다.
-        detail_parts = ""
-        if row.get("세부 실행안", ""):
-            detail_parts += (
-                '<div class="mini-label">권장 실행 방법</div>'
-                f'<div class="mini-text">{_html_text(row.get("세부 실행안", ""))}</div>'
+
+        evidence_summary = clean_pipeline_terms(str(row.get("근거 요약", "-") or "-"))
+        evidence_counts = _postlaunch_evidence_counts_for_card(evidence_summary)
+        issue_name = row.get("이슈", "")
+        patch_direction = row.get("패치·운영 방향", "-")
+        detail_actions = clean_pipeline_terms(str(row.get("세부 실행안", "") or "").strip())
+        expected_effect = clean_pipeline_terms(str(row.get("기대 효과", "") or "").strip())
+        caution = clean_pipeline_terms(str(row.get("주의사항", "") or "").strip())
+
+        detail_sections = []
+        if detail_actions:
+            detail_sections.append(
+                '<div class="ops-detail-block">'
+                '<div class="ops-detail-label">권장 실행 방법</div>'
+                f'<div class="ops-detail-text">{_html_text(detail_actions)}</div>'
+                '</div>'
             )
-        if row.get("기대 효과", ""):
-            detail_parts += (
-                '<div class="mini-label">기대 효과</div>'
-                f'<div class="mini-text">{_html_text(row.get("기대 효과", ""))}</div>'
+        if expected_effect:
+            detail_sections.append(
+                '<div class="ops-detail-block">'
+                '<div class="ops-detail-label">기대 효과</div>'
+                f'<div class="ops-detail-text">{_html_text(expected_effect)}</div>'
+                '</div>'
             )
-        if row.get("주의사항", ""):
-            detail_parts += (
-                '<div class="mini-label">확인 전 주의사항</div>'
-                f'<div class="mini-text">{_html_text(row.get("주의사항", ""))}</div>'
+        if caution:
+            detail_sections.append(
+                '<div class="ops-detail-block ops-detail-caution">'
+                '<div class="ops-detail-label">확인 전 주의사항</div>'
+                f'<div class="ops-detail-text">{_html_text(caution)}</div>'
+                '</div>'
             )
+
+        detail_html = ""
+        if detail_sections:
+            detail_html = '<div class="ops-detail-box">' + "".join(detail_sections) + '</div>'
 
         card_html = (
             f'<div class="ops-card {p_class}">'
-            f'<div>{badges}</div>'
-            f'<div class="ops-title">{idx + 1}. {_html_text(row.get("이슈", ""))}</div>'
-            '<div class="mini-label">왜 확인해야 하나요?</div>'
-            f'<div class="mini-text">{_html_text(row.get("근거 요약", "-"))}</div>'
-            '<div class="mini-label">권장 대응</div>'
-            f'<div class="mini-text">{_html_text(row.get("패치·운영 방향", "-"))}</div>'
-            f'{detail_parts}'
+            '<div class="ops-left">'
+            f'<div class="ops-badges">{badges}</div>'
+            f'<div class="ops-title">{idx + 1}. {_html_text(issue_name)}</div>'
+            '</div>'
+            '<div class="ops-center">'
+            '<div class="ops-center-block">'
+            '<div class="ops-mini-label">왜 확인해야 하나요?</div>'
+            f'<div class="ops-mini-text">{_html_text(evidence_summary)}</div>'
+            '</div>'
+            '<div class="ops-center-block">'
+            '<div class="ops-mini-label">권장 대응</div>'
+            f'<div class="ops-mini-text">{_html_text(patch_direction)}</div>'
+            '</div>'
+            '</div>'
+            '<div class="ops-evidence-box">'
+            '<div class="ops-evidence-title">근거 요약</div>'
+            f'<div class="ops-evidence-line"><span class="ops-evidence-name">영향 리뷰 수</span><span class="ops-evidence-value">{_html_text(evidence_counts["영향 리뷰 수"])}개</span></div>'
+            f'<div class="ops-evidence-line"><span class="ops-evidence-name">Steam 비추천 맥락</span><span class="ops-evidence-value">{_html_text(evidence_counts["Steam 비추천 맥락"])}개</span></div>'
+            f'<div class="ops-evidence-line"><span class="ops-evidence-name">초기 플레이타임 부정 반응</span><span class="ops-evidence-value">{_html_text(evidence_counts["초기 플레이타임 부정 반응"])}개</span></div>'
+            '</div>'
+            f'{detail_html}'
             '</div>'
         )
         st.markdown(card_html, unsafe_allow_html=True)
-
     return card_df
 
 # ============================================================
