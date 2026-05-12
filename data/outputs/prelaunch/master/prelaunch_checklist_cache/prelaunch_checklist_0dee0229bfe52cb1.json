@@ -1,0 +1,143 @@
+{
+  "title": "Action/Shooter 장르 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "장르 'Action'과 Steam 태그 'Shooter'를 포함하는 게임 조건입니다.",
+  "data_summary": "총 17개의 게임, 632개의 초기 리뷰 데이터를 분석하여 반복되는 이슈를 도출했습니다.",
+  "tag_dna_summary": "'Shooter' 태그는 분석된 954개 게임 중 31.6%가 성과 상위권에 위치하고 있습니다. 이는 해당 태그가 시장에서 활발히 소비됨을 의미하며, 성공을 보장하는 지표는 아닙니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소인 게임플레이 루프가 반복적이고 지루하지 않게 설계되었습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "Action 장르 게임의 85.3%(58개), Shooter 태그 게임의 83.3%(10개)에서 반복되었습니다. 비추천 맥락이 다수 확인되며, High urgency 사례도 다수 포함되어 있습니다.",
+      "how_to_check": "플레이 테스트를 통해 핵심 전투 루프가 1시간 이상 지속되어도 지루함이 없는지 확인하고, 유저 피드백을 통해 반복적인 구간을 개선하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 분위기를 살리는 그래픽과 사운드 효과가 유저의 몰입감을 충분히 높여주고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "Action 장르 게임의 60.3%(41개), Shooter 태그 게임의 75.0%(9개)에서 반복되었습니다. 추천 맥락이 많아 강화 요소로 분류되며, High urgency 사례는 보조적으로 확인됩니다.",
+      "how_to_check": "타격감과 사운드 이펙트가 조화로운지 확인하고, 시각적 피드백이 유저의 행동과 일치하는지 검토하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "게임 내 UI가 직관적이며, 유저가 조작이나 정보 확인에 어려움을 겪지 않도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "Action 장르 게임의 57.4%(39개), Shooter 태그 게임의 58.3%(7개)에서 반복되었습니다. 비추천 맥락이 상당수 존재하며, High urgency 사례도 빈번합니다.",
+      "how_to_check": "튜토리얼 없이도 주요 기능을 파악할 수 있는지 테스트하고, 메뉴 접근성과 가독성을 점검하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "게임의 전체 플레이 타임과 콘텐츠 구성이 가격 대비 충분하다고 느껴지도록 설계되었습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "Action 장르 게임의 55.9%(38개), Shooter 태그 게임의 58.3%(7개)에서 반복되었습니다. 비추천 맥락이 확인되며, High urgency 사례는 보조 지표로 참고하십시오.",
+      "how_to_check": "플레이 타임이 장르 평균에 부합하는지 확인하고, 콘텐츠 소모 속도를 조절할 수 있는 장치가 있는지 검토하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저의 숙련도에 따라 적절하게 조정되어 있습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "Action 장르 게임의 54.4%(37개), Shooter 태그 게임의 58.3%(7개)에서 반복되었습니다. 비추천 맥락이 존재하며, High urgency 사례는 보조적으로 참고하십시오.",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 급상승 구간이 없는지 확인하고, 난이도 조절 옵션을 제공하는지 검토하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "무기, 캐릭터, 적의 능력치 등 게임 내 밸런스가 특정 요소에 치우치지 않고 공정하게 설계되었습니까?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "Action 장르 게임의 38.2%(26개), Shooter 태그 게임의 50.0%(6개)에서 반복되었습니다. 비추천 맥락이 높게 나타나며, High urgency 사례도 확인됩니다.",
+      "how_to_check": "데이터 기반의 밸런스 시뮬레이션을 수행하고, 유저들이 특정 빌드만 강요받지 않는지 확인하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Shooter"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "게임 내에서 정의하기 어려운 기타 기술적/기획적 이슈가 발생할 가능성은 없습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "Shooter 태그 게임의 66.7%(8개)에서 반복되었습니다. 비추천 맥락이 존재하며, High urgency 사례는 보조적으로 참고하십시오.",
+      "how_to_check": "다양한 환경에서의 테스트를 통해 예상치 못한 오류나 불편 사항을 사전에 수집하십시오.",
+      "source_conditions": [
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "가격 대비 가치",
+      "check_question": "책정된 가격이 게임의 콘텐츠 양과 질에 비추어 유저들에게 합리적으로 받아들여질 수 있습니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "Shooter 태그 게임의 58.3%(7개)에서 반복되었습니다. 비추천 맥락이 확인되며, High urgency 사례는 보조적으로 참고하십시오.",
+      "how_to_check": "유사 장르 게임들의 가격대를 조사하고, 유저들이 기대하는 가치와 실제 콘텐츠를 비교 검토하십시오.",
+      "source_conditions": [
+        "steam_tag=Shooter"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 플레이 중 치명적인 버그나 오류가 발생하여 진행이 불가능한 상황이 없습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "Action 장르 게임의 51.5%(35개)에서 반복되었습니다. 비추천 맥락이 존재하며, High urgency 사례가 다수 확인되므로 주의가 필요합니다.",
+      "how_to_check": "QA 과정을 통해 주요 버그를 수정하고, 크래시 리포트 시스템을 구축하여 출시 후 즉각 대응하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터의 움직임과 입력 반응이 유저의 의도대로 정확하고 부드럽게 작동합니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "Action 장르 게임의 50.0%(34개)에서 반복되었습니다. 비추천 맥락이 존재하며, High urgency 사례가 다수 확인되므로 주의가 필요합니다.",
+      "how_to_check": "입력 지연(Input Lag)을 최소화하고, 다양한 컨트롤러 환경에서 조작 테스트를 수행하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 과거 출시된 게임들의 리뷰 데이터를 기반으로 작성된 참고 자료입니다. 특정 이슈가 발생하지 않는다고 해서 게임의 성공이 보장되지는 않습니다.",
+    "'Steam 태그 DNA'는 해당 태그를 가진 게임들의 일반적인 분포를 보여줄 뿐, 개별 게임의 성과를 결정짓는 직접적인 요인이 아닙니다.",
+    "데이터 분석 결과는 반복되는 경향성을 나타내므로, 개발 중인 게임의 핵심 재미 요소와 비교하여 우선순위를 유연하게 조정하시기 바랍니다."
+  ],
+  "final_summary": "Action 장르와 Shooter 태그를 가진 게임은 게임플레이 루프와 UI/UX, 콘텐츠 분량 등 핵심 시스템에 대한 유저의 기대치가 높습니다. 특히 게임플레이 루프와 밸런스, 난이도 조절은 비추천 리뷰의 주요 원인이 되므로 출시 전 집중적인 점검이 필요합니다. 그래픽과 사운드는 유저들에게 긍정적인 평가를 받는 강화 요소이므로 이를 유지 및 발전시키는 전략이 유효합니다."
+}

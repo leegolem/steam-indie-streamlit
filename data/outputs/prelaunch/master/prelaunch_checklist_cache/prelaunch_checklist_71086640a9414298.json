@@ -1,0 +1,115 @@
+{
+  "title": "Adventure 장르 및 탐험/스토리 중심 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "Adventure 장르, 5~20달러 가격대, Exploration 및 Story Rich 태그를 포함하며 Single-player 중심의 게임 환경입니다.",
+  "data_summary": "유사 조건의 게임 16개를 대상으로 총 589개의 초기 리뷰 데이터를 분석하였습니다.",
+  "tag_dna_summary": "'Exploration'과 'Story Rich' 태그는 각각 성과 상위권 게임에서 36.5%, 43.1%의 비중을 차지합니다. 이는 해당 태그가 장르적 특성을 잘 나타내지만, 성공을 보장하는 지표는 아님을 유의해야 합니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복적이고 지루하지 않게 설계되었으며, 유저가 명확한 목표를 가지고 플레이할 수 있습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "Adventure 장르 및 싱글 플레이 조건에서 101개 게임(76.5%)에서 반복되었으며, 70개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 56건)",
+      "how_to_check": "플레이 테스트를 통해 유저가 게임의 핵심 재미를 느끼는 구간과 지루함을 느끼는 구간을 파악하고 밸런스를 조정합니다.",
+      "source_conditions": [
+        "genre=Adventure",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 탐색, 인벤토리 관리, 튜토리얼 등 유저 인터페이스가 직관적이며 플레이 흐름을 방해하지 않습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "Adventure 장르 게임 77개 중 47개(61.0%)에서 반복되었으며, 27개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 24건)",
+      "how_to_check": "다양한 환경의 유저를 대상으로 UI 사용성 테스트를 진행하여 불편함을 겪는 구간을 식별합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 적절한 플레이 타임과 콘텐츠 밀도를 제공하고 있으며, 유저가 분량 부족을 느끼지 않습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "Adventure 장르 게임 77개 중 46개(59.7%)에서 반복되었으며, 19개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 13건)",
+      "how_to_check": "플레이 타임 분석 및 유저 피드백을 통해 콘텐츠의 밀도와 볼륨이 가격대에 부합하는지 검토합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 분위기를 잘 살리는 시각적 요소와 사운드 디자인이 유저에게 긍정적인 몰입감을 제공하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "Adventure 장르 게임 77개 중 49개(63.6%)에서 반복되었으며, 47개 게임에서 추천 맥락으로 언급되었습니다. (High urgency 19건)",
+      "how_to_check": "시각적/청각적 연출이 게임의 테마와 일관성을 유지하는지 확인하고, 유저의 긍정적 반응을 강화합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 적절하며, 유저가 좌절하지 않고 도전할 수 있는 수준으로 설계되었습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "Adventure 장르 게임 77개 중 39개(50.6%)에서 반복되었으며, 19개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 13건)",
+      "how_to_check": "난이도별 플레이 테스트를 통해 유저가 막히는 구간을 파악하고 밸런스를 조정합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터 이동 및 상호작용 시 조작이 반응적이고 정확하게 이루어지며 유저에게 스트레스를 주지 않습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "Adventure 장르 게임 77개 중 36개(46.8%)에서 반복되었으며, 18개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 20건)",
+      "how_to_check": "다양한 입력 장치(키보드/마우스, 패드)를 사용하여 조작의 편의성과 반응성을 테스트합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "버그",
+      "check_question": "게임 진행을 방해하는 치명적인 버그나 오류가 존재하지 않으며, 안정적인 플레이 환경을 제공합니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "Story Rich 태그 게임 15개 중 10개(66.7%)에서 반복되었으며, 2개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 5건)",
+      "how_to_check": "QA 테스트를 통해 주요 버그를 식별하고 수정하며, 출시 전 안정성 테스트를 수행합니다.",
+      "source_conditions": [
+        "steam_tag=Story Rich"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "기타 기술적 문제나 기획적 이슈가 유저 경험을 저해하지 않도록 세부적인 리뷰를 확인했습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "10~20달러 가격대 게임 52개 중 39개(75.0%)에서 반복되었으며, 27개 게임에서 비추천 맥락으로 언급되었습니다. (High urgency 18건)",
+      "how_to_check": "유저 리뷰를 주기적으로 모니터링하여 특정되지 않은 불편 사항을 수집하고 대응합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 조건 게임들의 초기 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 개발 중인 게임의 고유한 특성과 기획 의도를 우선적으로 고려해야 합니다.",
+    "'리스크 요소'로 분류된 항목은 유저 피드백에서 부정적 언급이 많았던 지점이므로, 출시 전 집중적인 테스트와 보완이 필요합니다.",
+    "'강화 요소'는 유저들이 긍정적으로 평가한 지점이므로, 해당 강점을 유지하거나 더욱 돋보이게 하는 방향으로 개발을 진행하십시오."
+  ],
+  "final_summary": "본 분석은 Adventure 장르와 탐험/스토리 중심의 싱글 플레이 게임에서 반복적으로 나타나는 핵심 이슈를 점검합니다. 특히 게임플레이 루프와 UI/UX, 콘텐츠 분량에 대한 리스크가 높게 나타나므로, 출시 전 해당 요소들의 완성도를 최우선으로 점검해야 합니다."
+}

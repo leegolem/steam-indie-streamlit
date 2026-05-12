@@ -1,0 +1,125 @@
+{
+  "title": "Steam 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "Action, Casual, RPG, Racing, Simulation, Sports 장르를 포함하며, 가격대는 10-20달러, Single-player 중심의 게임입니다.",
+  "data_summary": "총 32개의 게임과 1443개의 초기 리뷰 데이터를 분석하여 반복되는 이슈를 도출했습니다.",
+  "tag_dna_summary": "현재 분석 조건에 해당하는 Steam 태그 DNA 데이터가 존재하지 않아 참고할 수 없습니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복적이고 지루하지 않게 설계되었으며, 유저가 명확한 목표를 가지고 플레이할 수 있습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "전체 132개 게임 중 101개(76.5%)에서 반복되었으며, 70개의 비추천 맥락이 확인되었습니다. (High urgency: 56개 게임)",
+      "how_to_check": "FGT(포커스 그룹 테스트)를 통해 유저가 게임의 핵심 루프를 이해하고 지속적인 재미를 느끼는지 확인합니다.",
+      "source_conditions": [
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 정보 전달이 직관적이며 유저가 혼란을 겪지 않도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "전체 52개 게임 중 42개(80.8%)에서 반복되었으며, 31개의 비추천 맥락이 확인되었습니다. (High urgency: 25개 게임)",
+      "how_to_check": "UI/UX 테스트를 통해 유저가 별도의 튜토리얼 없이도 주요 기능을 쉽게 찾고 사용할 수 있는지 점검합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 시각적 스타일과 사운드 효과가 유저에게 긍정적인 몰입감을 제공하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "전체 52개 게임 중 37개(71.2%)에서 반복되었으며, 22개의 비추천 맥락이 확인되었습니다. (High urgency: 20개 게임)",
+      "how_to_check": "사운드와 그래픽 에셋이 게임의 분위기와 일관성을 유지하는지 검토합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 적절하게 설계되어 유저가 좌절하지 않고 도전할 수 있습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "전체 52개 게임 중 36개(69.2%)에서 반복되었으며, 22개의 비추천 맥락이 확인되었습니다. (High urgency: 18개 게임)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 밸런스가 적절한지 테스트합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 유저가 충분히 만족할 만한 플레이 타임과 콘텐츠를 제공하고 있습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "전체 52개 게임 중 36개(69.2%)에서 반복되었으며, 21개의 비추천 맥락이 확인되었습니다. (High urgency: 13개 게임)",
+      "how_to_check": "플레이 타임 분석을 통해 가격 대비 콘텐츠 양이 적절한지 검토합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "입력 반응 속도와 조작 체계가 레이싱 장르의 특성에 맞게 정밀하게 구현되었습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "전체 10개 게임 중 7개(70.0%)에서 반복되었으며, 4개의 비추천 맥락이 확인되었습니다. (High urgency: 3개 게임)",
+      "how_to_check": "다양한 컨트롤러 환경에서 조작 반응성을 테스트합니다.",
+      "source_conditions": [
+        "genre=Racing"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "버그",
+      "check_question": "게임 진행을 방해하는 치명적인 버그가 존재하지 않으며, 안정적인 플레이 환경을 제공합니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "전체 79개 게임(48.5%)에서 반복되었으며, 38개의 비추천 맥락이 확인되었습니다. (High urgency: 53개 게임)",
+      "how_to_check": "QA 테스트를 통해 주요 버그를 식별하고 수정합니다.",
+      "source_conditions": [
+        "전체 게임 기준 반복 이슈"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "조작 체계가 유저에게 직관적이며 피로감을 주지 않습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "전체 67개 게임(41.1%)에서 반복되었으며, 38개의 비추천 맥락이 확인되었습니다. (High urgency: 39개 게임)",
+      "how_to_check": "조작 편의성 테스트를 수행합니다.",
+      "source_conditions": [
+        "전체 게임 기준 반복 이슈"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "가격 대비 가치",
+      "check_question": "현재 책정된 가격이 게임의 콘텐츠와 품질에 비추어 합리적이라고 판단됩니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "전체 67개 게임(41.1%)에서 반복되었으며, 36개의 비추천 맥락이 확인되었습니다. (High urgency: 26개 게임)",
+      "how_to_check": "유사 장르 및 가격대 게임들과 비교하여 가치를 평가합니다.",
+      "source_conditions": [
+        "전체 게임 기준 반복 이슈"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 장르 및 가격대 게임들의 초기 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 핵심 재미 요소에 따라 우선순위를 유연하게 조정해야 합니다.",
+    "Steam 태그 DNA 데이터가 부재하므로, 타겟 유저층의 선호도를 별도로 조사하는 것을 권장합니다."
+  ],
+  "final_summary": "본 게임은 다양한 장르가 혼합된 10-20달러 가격대의 싱글 플레이 게임으로, 특히 '게임플레이 루프'와 'UI/UX'의 완성도가 초기 유저 평가에 결정적인 영향을 미칠 것으로 보입니다. 리스크 요소로 분류된 항목들을 중심으로 출시 전 철저한 검증이 필요합니다."
+}

@@ -1,0 +1,113 @@
+{
+  "title": "Adventure 장르 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "장르가 'Adventure'인 게임을 대상으로 하는 출시 전 점검 체크리스트입니다.",
+  "data_summary": "총 77개의 Adventure 장르 게임과 2,268개의 초기 리뷰 데이터를 분석하여 반복되는 이슈를 도출했습니다.",
+  "tag_dna_summary": "현재 분석 조건에 해당하는 Steam 태그 DNA 데이터는 제공되지 않았습니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 초반부터 명확하게 전달되며, 반복적인 플레이 과정에서 지루함을 느끼지 않도록 설계되었습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "77개 게임 중 62개(80.5%)에서 반복되었으며, 44개의 비추천 맥락이 확인되었습니다. (High urgency 사례 33건)",
+      "how_to_check": "플레이 테스트를 통해 초반 30분 내 핵심 재미가 전달되는지 확인하고, 반복 구간의 피로도를 측정합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 분위기를 효과적으로 전달하는 그래픽과 사운드 요소가 유저에게 긍정적인 몰입감을 제공하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "77개 게임 중 49개(63.6%)에서 반복되었으며, 20개의 비추천 맥락이 확인되었습니다. (High urgency 사례 19건)",
+      "how_to_check": "시각적/청각적 요소가 게임의 테마와 일관성을 유지하는지 검토하고, 유저 몰입을 방해하는 요소가 없는지 확인합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 정보 전달 등 UI/UX가 유저의 직관적인 플레이를 방해하지 않도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "77개 게임 중 47개(61.0%)에서 반복되었으며, 27개의 비추천 맥락이 확인되었습니다. (High urgency 사례 24건)",
+      "how_to_check": "튜토리얼 없이도 주요 기능을 파악할 수 있는지 테스트하고, UI 가독성과 반응 속도를 점검합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "제공되는 콘텐츠의 양과 질이 가격 대비 적절하며, 유저가 충분한 플레이 시간을 확보할 수 있습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "77개 게임 중 46개(59.7%)에서 반복되었으며, 19개의 비추천 맥락이 확인되었습니다. (High urgency 사례 13건)",
+      "how_to_check": "플레이 타임이 기획 의도와 일치하는지 확인하고, 콘텐츠의 밀도가 적절한지 검토합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저의 숙련도에 따라 적절하게 설계되어 좌절감을 주지 않습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "77개 게임 중 39개(50.6%)에서 반복되었으며, 19개의 비추천 맥락이 확인되었습니다. (High urgency 사례 13건)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 구간별 이탈률을 확인하고 밸런스를 조정합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터 이동 및 상호작용 시 조작 반응이 즉각적이고 의도한 대로 정확하게 작동합니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "77개 게임 중 36개(46.8%)에서 반복되었으며, 18개의 비추천 맥락이 확인되었습니다. (High urgency 사례 20건)",
+      "how_to_check": "입력 지연(Input Lag) 여부를 확인하고, 주요 조작 키 설정이 직관적인지 테스트합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 진행을 방해하는 치명적인 버그나 충돌 현상이 발생하지 않도록 충분한 QA를 거쳤습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "77개 게임 중 40개(51.9%)에서 반복되었으며, 15개의 비추천 맥락이 확인되었습니다. (High urgency 사례 24건)",
+      "how_to_check": "다양한 환경에서 반복 테스트를 수행하고, 주요 버그 리포트 시스템을 구축합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "게임의 전반적인 완성도와 관련하여 유저 피드백에서 자주 언급되는 기타 이슈들을 모니터링하고 있습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "77개 게임 중 35개(45.5%)에서 반복되었으며, 20개의 비추천 맥락이 확인되었습니다. (High urgency 사례 10건)",
+      "how_to_check": "커뮤니티 피드백을 상시 모니터링하고, 게임의 특정 부분에서 발생하는 예외적인 이슈를 추적합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 'Adventure' 장르 게임들의 과거 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 핵심 재미 요소에 따라 유연하게 적용해야 합니다.",
+    "'기타' 항목과 같이 범주가 넓은 이슈는 개발 중인 게임의 구체적인 피드백을 통해 세부 원인을 파악하는 것이 중요합니다."
+  ],
+  "final_summary": "Adventure 장르의 특성상 게임플레이 루프와 UI/UX, 콘텐츠 분량 등 핵심 경험에 대한 리스크가 높게 나타났습니다. 그래픽과 사운드는 긍정적인 강화 요소로 활용하되, 전반적인 게임의 완성도와 조작감, 난이도 설정을 면밀히 점검하여 출시 초기 리스크를 최소화해야 합니다."
+}

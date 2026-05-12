@@ -1,0 +1,169 @@
+{
+  "title": "Action 장르 싱글 플레이 게임 출시 전 점검 체크리스트",
+  "condition_summary": "Action 장르, 5~20달러 가격대, Single-player 중심의 게임입니다.",
+  "data_summary": "유사 조건의 게임 27개, 총 876개의 초기 리뷰 데이터를 분석하였습니다.",
+  "tag_dna_summary": "현재 분석 조건에 해당하는 Steam 태그 DNA 데이터는 제공되지 않았습니다. 장르와 플레이 방식 등 기본 조건에 기반한 점검을 우선 수행하시기 바랍니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복적이고 지루하지 않게 설계되었으며, 유저가 명확한 목표를 가지고 플레이할 수 있습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "분석된 유사 게임 중 최대 101개(76.5%)에서 반복되었으며, 비추천 맥락이 70개 게임에서 확인되었습니다. (High urgency: 56개 게임)",
+      "how_to_check": "플레이 테스트를 통해 핵심 루프가 초반부터 후반까지 유저에게 지속적인 동기를 부여하는지 확인합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "price_group=10-20",
+        "price_group=5-10",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 인터페이스가 직관적이며 유저가 게임 플레이 중 혼란을 겪지 않도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "유사 게임 중 최대 76개(57.6%)에서 반복되었으며, 비추천 맥락이 45개 게임에서 확인되었습니다. (High urgency: 39개 게임)",
+      "how_to_check": "FGT(포커스 그룹 테스트)를 통해 유저가 튜토리얼 없이도 UI를 이해하고 조작할 수 있는지 관찰합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "play_style=Single-player 중심",
+        "genre=Action",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 시각적 스타일과 사운드가 장르적 특성에 부합하며 유저에게 긍정적인 몰입감을 제공하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "유사 게임 중 최대 74개(56.1%)에서 반복되었으며, 추천 맥락이 69개 게임에서 확인되었습니다. (High urgency: 29개 게임)",
+      "how_to_check": "아트 스타일과 사운드 이펙트가 게임의 분위기를 효과적으로 전달하는지 검토합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 적절하며, 유저가 좌절하지 않고 도전할 수 있는 수준으로 밸런싱되어 있습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "유사 게임 중 최대 69개(52.3%)에서 반복되었으며, 비추천 맥락이 34개 게임에서 확인되었습니다. (High urgency: 24개 게임)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 구간별 이탈률을 점검합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 제공되는 콘텐츠의 양과 질이 유저의 기대치를 충족하며 충분한 플레이 타임을 보장합니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "유사 게임 중 최대 67개(50.8%)에서 반복되었으며, 비추천 맥락이 34개 게임에서 확인되었습니다. (High urgency: 23개 게임)",
+      "how_to_check": "전체 플레이 타임을 측정하고, 가격대별 기대치에 부합하는 콘텐츠 밀도를 확보했는지 확인합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "price_group=5-10",
+        "genre=Action",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터의 움직임과 입력 반응이 즉각적이고 정교하여 유저가 의도한 대로 조작할 수 있습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "유사 게임 중 34개(65.4%)에서 반복되었으며, 비추천 맥락이 21개 게임에서 확인되었습니다. (High urgency: 23개 게임)",
+      "how_to_check": "입력 지연(Input Lag)을 최소화하고 조작의 피드백이 명확한지 테스트합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "게임 내 캐릭터, 아이템, 적의 능력치가 공정하게 설정되어 특정 요소가 게임의 재미를 해치지 않습니까?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "유사 게임 중 최대 44개(33.3%)에서 반복되었으며, 비추천 맥락이 33개 게임에서 확인되었습니다. (High urgency: 27개 게임)",
+      "how_to_check": "데이터 분석을 통해 특정 빌드나 아이템이 게임의 난이도를 지나치게 낮추거나 높이지 않는지 확인합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 실행 중 발생하는 크래시나 치명적인 버그가 없으며, 다양한 환경에서 안정적으로 구동됩니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "유사 게임 중 최대 63개(47.7%)에서 반복되었으며, 비추천 맥락이 29개 게임에서 확인되었습니다. (High urgency: 42개 게임)",
+      "how_to_check": "QA 과정을 통해 주요 버그를 식별하고 수정하며, 다양한 하드웨어 환경에서 테스트합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "조작 방식이 유저에게 익숙하고 편안하게 느껴지며, 조작 관련 불편 사항이 발생하지 않습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "유사 게임 중 54개(40.9%)에서 반복되었으며, 비추천 맥락이 30개 게임에서 확인되었습니다. (High urgency: 30개 게임)",
+      "how_to_check": "다양한 컨트롤러 지원 여부와 키 매핑 기능을 점검합니다.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "강화 요소",
+      "category": "가격 대비 가치",
+      "check_question": "현재 책정된 가격이 게임의 콘텐츠와 품질에 비추어 유저들에게 합리적으로 받아들여지고 있습니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "유사 게임 중 16개(40.0%)에서 반복되었으며, 추천 맥락이 12개 게임에서 확인되었습니다. (High urgency: 6개 게임)",
+      "how_to_check": "유사 장르 및 규모의 게임들과 가격을 비교하고, 유저 피드백을 통해 가치 체감을 확인합니다.",
+      "source_conditions": [
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "게임의 전반적인 완성도를 저해할 수 있는 기타 세부적인 이슈들이 존재하지 않습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "유사 게임 중 39개(75.0%)에서 반복되었으며, 비추천 맥락이 27개 게임에서 확인되었습니다. (High urgency: 18개 게임)",
+      "how_to_check": "리뷰 분석을 통해 특정되지 않은 기타 불편 사항들을 지속적으로 모니터링합니다.",
+      "source_conditions": [
+        "price_group=10-20"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 조건 게임들의 초기 리뷰 데이터를 바탕으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 장르적 특성에 맞춰 유연하게 적용해야 합니다.",
+    "Steam 태그 DNA 데이터가 부재하므로, 장르와 플레이 방식 등 입력된 기본 조건에 집중하여 점검하시기 바랍니다."
+  ],
+  "final_summary": "Action 장르와 싱글 플레이 중심의 게임 특성상 '게임플레이 루프'와 'UI/UX' 등 핵심 경험에 대한 리스크가 높게 나타났습니다. 출시 전 이러한 핵심 요소들을 집중 점검하여 유저 경험을 최적화하는 것이 중요합니다."
+}

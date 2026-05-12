@@ -1,0 +1,146 @@
+{
+  "title": "Action/Pixel Graphics 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "장르: Action, 가격대: 10-20달러, Steam 태그: Pixel Graphics, 플레이 방식: Single-player 중심",
+  "data_summary": "분석 대상은 사용자 입력 조건과 일치하는 1개의 게임이며, 해당 조건군 내에서 반복되는 주요 이슈들을 추출하였습니다.",
+  "tag_dna_summary": "'Pixel Graphics' 태그는 분석된 2,197개 게임 중 833개(37.9%)가 성과 상위권에 위치하며, 이는 해당 태그가 인디게임 시장에서 흔히 사용되는 스타일임을 시사합니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복되는 플레이 과정에서 지루해지지 않도록 설계되었으며, 유저가 명확한 목표를 가지고 플레이할 수 있습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 88개(71.0%)에서 반복되었으며, 비추천 맥락이 49개 게임에서 확인되었습니다. (High urgency: 38개 게임)",
+      "how_to_check": "플레이 테스트를 통해 초반 30분~1시간 동안의 루프가 유저에게 충분한 동기를 부여하는지 확인하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 가독성 등 유저가 게임을 이용하는 과정에서 불편함을 느낄 만한 요소가 없습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 67개(54.0%)에서 반복되었으며, 비추천 맥락이 37개 게임에서 확인되었습니다. (High urgency: 34개 게임)",
+      "how_to_check": "튜토리얼 없이도 주요 기능을 파악할 수 있는지, UI 요소가 게임 화면을 가리지 않는지 테스트하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 제공되는 콘텐츠의 양과 질이 유저의 기대치를 충족하며, 플레이 타임이 적절하게 구성되어 있습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 71개(57.3%)에서 반복되었으며, 비추천 맥락이 31개 게임에서 확인되었습니다. (High urgency: 17개 게임)",
+      "how_to_check": "현재 콘텐츠 분량이 가격대(10-20달러)에 부합하는지 유사 장르 게임들과 비교 분석하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 분위기를 살리는 시각적 요소와 사운드가 유저에게 긍정적인 경험을 제공하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 75개(60.5%)에서 반복되었으며, 비추천 맥락이 31개 게임에서 확인되었습니다. (High urgency: 26개 게임)",
+      "how_to_check": "아트 스타일과 사운드 효과가 게임의 액션성과 잘 어우러지는지 확인하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저가 좌절하지 않고 도전할 수 있도록 적절하게 설계되어 있습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 57개(46.0%)에서 반복되었으며, 비추천 맥락이 23개 게임에서 확인되었습니다. (High urgency: 17개 게임)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 밸런스가 적절한지 검증하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 플레이 중 치명적인 버그나 오류가 발생하지 않도록 충분한 QA가 진행되었습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "'price_group=10-20' 조건에서 45개 게임 중 24개(53.3%)에서 반복되었으며, 비추천 맥락이 11개 게임에서 확인되었습니다. (High urgency: 15개 게임)",
+      "how_to_check": "주요 기능 및 환경에서 버그 발생 여부를 전수 조사하십시오.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "액션 게임의 핵심인 조작 반응성이 유저의 의도대로 정확하게 구현되어 있습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "'genre=Action' 조건에서 62개 게임 중 27개(43.5%)에서 반복되었으며, 비추천 맥락이 18개 게임에서 확인되었습니다. (High urgency: 16개 게임)",
+      "how_to_check": "입력 지연(Input Lag)이 없는지, 조작 피드백이 명확한지 확인하십시오.",
+      "source_conditions": [
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "가격 대비 가치",
+      "check_question": "유저가 지불한 가격만큼의 가치를 충분히 느낄 수 있도록 게임의 완성도를 높였습니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "'price_group=10-20' 조건에서 45개 게임 중 25개(55.6%)에서 반복되었으며, 비추천 맥락이 12개 게임에서 확인되었습니다. (High urgency: 8개 게임)",
+      "how_to_check": "유저 리뷰에서 가격 대비 만족도가 낮게 나타나는 지점을 파악하여 개선하십시오.",
+      "source_conditions": [
+        "price_group=10-20",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "핵심 루프",
+      "check_question": "유저들이 게임의 어떤 부분을 긍정적으로 평가하는지 파악하여 해당 요소를 더욱 강조하고 있습니까?",
+      "evidence_issue": "긍정 칭찬",
+      "evidence_summary": "'Single-player 중심' 조건에서 124개 게임 중 115개(92.7%)에서 반복되었으며, 추천 맥락이 114개 게임에서 확인되었습니다. (High urgency: 26개 게임)",
+      "how_to_check": "유저들의 긍정적인 피드백을 분석하여 게임의 핵심 강점을 유지하십시오.",
+      "source_conditions": [
+        "play_style=Single-player 중심",
+        "price_group=10-20",
+        "genre=Action",
+        "steam_tag=Pixel Graphics"
+      ]
+    }
+  ],
+  "mid_priority": [],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 과거 출시된 유사 조건 게임들의 리뷰 데이터를 기반으로 작성되었습니다. 데이터가 적은 경우(예: 1개 게임) 통계적 유의성이 낮을 수 있으므로 참고용으로 활용하시기 바랍니다.",
+    "Steam 태그 DNA는 성공을 보장하는 지표가 아니며, 게임의 핵심 재미 요소와 조화를 이루는 것이 중요합니다.",
+    "모든 리스크 요소는 게임의 장르와 타겟 유저층에 따라 다르게 해석될 수 있으므로, 개발 중인 게임의 특성에 맞춰 우선순위를 재조정하십시오."
+  ],
+  "final_summary": "입력하신 조건(Action, 10-20달러, Pixel Graphics, Single-player)은 많은 인디게임이 채택하는 구성입니다. 데이터 분석 결과, 게임플레이 루프와 UI/UX, 콘텐츠 분량 등에서 반복적인 리스크가 확인되므로 출시 전 해당 항목들에 대한 집중적인 점검이 필요합니다."
+}

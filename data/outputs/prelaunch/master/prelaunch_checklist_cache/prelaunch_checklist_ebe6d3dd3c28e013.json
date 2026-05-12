@@ -1,0 +1,121 @@
+{
+  "title": "Adventure 장르(10-20달러) 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "Adventure 장르, 10-20달러 가격대의 게임 조건입니다.",
+  "data_summary": "유사 조건의 게임 22개, 총 1161개의 초기 리뷰 데이터를 분석하였습니다.",
+  "tag_dna_summary": "현재 분석 조건에 해당하는 Steam 태그 DNA 데이터는 존재하지 않습니다. 따라서 일반적인 장르 및 가격대 분석 결과를 우선적으로 참고하시기 바랍니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복되는 과정에서 유저가 지루함을 느끼지 않도록 설계되었습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "Adventure 장르 및 10-20달러 가격대 게임에서 49~62개 게임이 언급하며, 비추천 맥락이 최대 44개 게임에서 확인되었습니다. (High urgency: 33개 게임)",
+      "how_to_check": "플레이 테스트를 통해 핵심 루프가 반복될 때 유저의 몰입도가 유지되는지 구간별로 확인합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "유저가 게임 내 정보를 직관적으로 파악할 수 있으며, 조작 인터페이스가 불편함 없이 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "42~47개 게임에서 반복적으로 언급되었으며, 비추천 맥락이 27~31개 게임에서 나타났습니다. (High urgency: 24~25개 게임)",
+      "how_to_check": "FGT(포커스 그룹 테스트)를 통해 유저가 튜토리얼 없이도 주요 기능을 쉽게 사용하는지 관찰합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "현재의 그래픽과 사운드 스타일이 게임의 분위기를 효과적으로 전달하고 있으며, 유저에게 긍정적인 경험을 제공합니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "37~49개 게임에서 언급되었으며, 추천 맥락이 36~47개 게임으로 높게 나타났습니다. (High urgency: 19~20개 게임)",
+      "how_to_check": "시각적/청각적 요소가 게임의 테마와 일관성을 유지하는지 검토하고, 유저 피드백을 통해 강화할 부분을 식별합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저의 숙련도에 따라 적절하게 설계되어 좌절감을 주지 않습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "36~39개 게임에서 언급되었으며, 비추천 맥락이 19~22개 게임에서 확인되었습니다. (High urgency: 13~18개 게임)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 특정 구간에서 막히는 현상이 없는지 난이도 밸런스를 점검합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 제공되는 콘텐츠의 양과 질이 유저의 기대치를 충족합니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "36~46개 게임에서 언급되었으며, 비추천 맥락이 19~21개 게임에서 확인되었습니다. (High urgency: 13개 게임)",
+      "how_to_check": "플레이 타임과 콘텐츠 밀도를 분석하여 가격대 대비 적절한 분량인지 검토합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터 이동 및 상호작용 시 입력 지연이나 불편함 없이 반응합니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "34~36개 게임에서 언급되었으며, 비추천 맥락이 18~21개 게임에서 확인되었습니다. (High urgency: 20~23개 게임)",
+      "how_to_check": "입력 반응 속도와 조작 편의성을 테스트하여 유저가 의도한 대로 캐릭터가 움직이는지 확인합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "버그",
+      "check_question": "게임 진행을 방해하는 치명적인 버그가 존재하지 않으며, 안정적인 플레이 환경을 제공합니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "38~40개 게임에서 언급되었으며, 비추천 맥락이 15~19개 게임에서 확인되었습니다. (High urgency: 24~28개 게임)",
+      "how_to_check": "QA 과정을 통해 주요 버그를 식별하고, 특히 진행 불가 버그를 우선적으로 수정합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "유저 리뷰에서 언급된 기타 불편 사항 중 게임 경험을 저해하는 요소가 있습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "35~39개 게임에서 언급되었으며, 비추천 맥락이 20~27개 게임에서 확인되었습니다. (High urgency: 10~18개 게임)",
+      "how_to_check": "리뷰 데이터를 세부적으로 분석하여 특정되지 않은 불편 사항을 파악하고 개선합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 장르 및 가격대 게임들의 초기 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 핵심 재미 요소에 따라 우선순위를 유연하게 조정해야 합니다.",
+    "'기타' 항목은 원인 범주가 넓으므로, 구체적인 유저 피드백을 직접 확인하는 과정이 반드시 병행되어야 합니다."
+  ],
+  "final_summary": "Adventure 장르와 10-20달러 가격대 게임에서 공통적으로 나타나는 게임플레이 루프, UI/UX, 콘텐츠 분량 등의 리스크 요소를 중심으로 점검이 필요합니다. 특히 게임플레이 루프와 UI/UX는 비추천 리뷰에서 높은 비중을 차지하므로 출시 전 집중적인 검증이 요구됩니다."
+}

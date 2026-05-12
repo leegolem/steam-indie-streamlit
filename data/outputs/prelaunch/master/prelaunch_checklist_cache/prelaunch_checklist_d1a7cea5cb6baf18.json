@@ -1,0 +1,113 @@
+{
+  "title": "Action 장르 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "장르: Action (Steam 태그 및 가격대 조건 없음)",
+  "data_summary": "Action 장르에 해당하는 총 68개의 게임, 1,849개의 초기 리뷰 데이터를 분석하였습니다.",
+  "tag_dna_summary": "분석된 데이터 내에서 Steam 태그 DNA와 관련된 유의미한 정보는 확인되지 않았습니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복되는 플레이 과정에서 명확하게 전달되며, 유저가 지루함을 느끼지 않도록 설계되었습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "68개 게임 중 58개(85.3%)에서 언급되었으며, 비추천 맥락이 37건 확인되었습니다. (High urgency: 29건)",
+      "how_to_check": "플레이 테스트를 통해 핵심 루프가 반복될 때 유저가 느끼는 피로도와 재미의 지속성을 확인하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 시각적 스타일과 사운드 효과가 Action 장르의 몰입감을 충분히 강화하고 있습니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "68개 게임 중 41개(60.3%)에서 언급되었으며, 추천 맥락이 40건으로 긍정적 평가가 많습니다. (High urgency: 17건)",
+      "how_to_check": "주요 액션 연출과 사운드 이펙트가 조화로운지, 장르적 특성을 잘 살리고 있는지 검토하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 정보 표시 등 UI/UX가 유저의 직관적인 플레이를 방해하지 않도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "68개 게임 중 39개(57.4%)에서 언급되었으며, 비추천 맥락이 23건 확인되었습니다. (High urgency: 18건)",
+      "how_to_check": "UI의 가독성과 조작 편의성을 테스트하고, 유저가 정보를 찾는 데 어려움이 없는지 확인하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "제공되는 콘텐츠의 양이 가격 대비 적절하며, 유저가 충분한 플레이 시간을 확보할 수 있습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "68개 게임 중 38개(55.9%)에서 언급되었으며, 비추천 맥락이 18건 확인되었습니다. (High urgency: 13건)",
+      "how_to_check": "플레이 타임과 콘텐츠 밀도를 분석하여 유저가 분량 부족을 느끼지 않을지 검토하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저의 숙련도에 따라 적절하게 설계되어 있으며, 불합리한 구간은 없습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "68개 게임 중 37개(54.4%)에서 언급되었으며, 비추천 맥락이 16건 확인되었습니다. (High urgency: 13건)",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 밸런스가 적절한지 확인하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "캐릭터 능력치, 아이템, 적의 강함 등 게임 내 밸런스가 특정 요소에 치우치지 않고 공정하게 유지됩니까?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "68개 게임 중 26개(38.2%)에서 언급되었으며, 비추천 맥락이 18건 확인되었습니다. (High urgency: 12건)",
+      "how_to_check": "데이터 시뮬레이션 및 테스트를 통해 밸런스 붕괴 요소가 없는지 점검하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 플레이 중 발생하는 치명적인 버그나 오류를 수정하여 원활한 플레이 환경을 제공하고 있습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "68개 게임 중 35개(51.5%)에서 언급되었으며, 비추천 맥락이 14건 확인되었습니다. (High urgency: 19건)",
+      "how_to_check": "QA 과정을 통해 주요 버그를 식별하고, 출시 전 안정화 패치를 진행하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터의 움직임과 액션 반응이 유저의 의도대로 즉각적이고 정확하게 구현되었습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "68개 게임 중 34개(50.0%)에서 언급되었으며, 비추천 맥락이 16건 확인되었습니다. (High urgency: 18건)",
+      "how_to_check": "입력 지연(Input Lag) 여부와 조작의 반응성을 집중적으로 테스트하십시오.",
+      "source_conditions": [
+        "genre=Action"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 'Action' 장르 게임들의 과거 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 핵심 재미 요소에 따라 유연하게 적용해야 합니다.",
+    "high_urgency_game_count는 보조 지표이므로, 이를 단독적인 우선순위 기준으로 삼지 않도록 주의하십시오."
+  ],
+  "final_summary": "Action 장르 게임 출시를 위해 게임플레이 루프의 완성도와 UI/UX 편의성, 콘텐츠 분량 및 난이도 밸런스를 최우선으로 점검해야 합니다. 또한, 버그와 조작감 등 기술적/기능적 완성도를 높여 부정적인 사용자 경험을 최소화하는 것이 중요합니다."
+}

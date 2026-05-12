@@ -1,0 +1,170 @@
+{
+  "title": "Action Rogue-like 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "Action 장르, 5~20달러 가격대, Rogue-like 태그, Single-player 중심의 게임입니다.",
+  "data_summary": "유사 조건의 게임 1종과 해당 게임들의 초기 리뷰 2건을 분석한 결과입니다.",
+  "tag_dna_summary": "'Rogue-like' 태그는 분석된 1,136개 게임 중 445개(39.2%)가 성과 상위권에 위치했습니다. 이는 해당 태그가 성공을 보장하는 것은 아니며, 장르적 특성을 이해하는 보조 지표로 활용해야 합니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 플레이 루프가 반복적인 도전 과정에서 유저에게 충분한 재미와 성취감을 제공합니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "Action 장르 및 Rogue-like 태그 조건에서 5~58개 게임이 반복적으로 언급되었으며, 비추천 맥락이 다수 확인되었습니다(High urgency 보조 지표 참고).",
+      "how_to_check": "FGT(포커스 그룹 테스트)를 통해 반복 플레이 시 지루함을 느끼는 지점과 성취감의 주기를 확인합니다.",
+      "source_conditions": [
+        "steam_tag=Rogue-like",
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "게임 내 정보 전달과 조작 인터페이스가 유저가 직관적으로 이해하고 사용할 수 있도록 설계되었습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "10~20달러 가격대 및 Single-player 조건에서 42~76개 게임이 언급되었으며, 비추천 맥락이 31~45건으로 높게 나타났습니다.",
+      "how_to_check": "튜토리얼 없이도 주요 기능을 파악할 수 있는지 UI 사용성 테스트를 진행합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "play_style=Single-player 중심",
+        "genre=Action",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 시각적 스타일과 사운드가 장르적 특성을 잘 살리고 유저에게 긍정적인 몰입감을 제공합니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "10~20달러 가격대 및 Single-player 조건에서 37~74개 게임이 언급되었으며, 추천 맥락이 비추천보다 많아 강화 요소로 분류되었습니다.",
+      "how_to_check": "아트 스타일과 사운드 효과가 게임의 분위기와 일관되게 조화되는지 검토합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 유저의 숙련도 향상에 맞춰 적절하게 설계되어 있습니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "10~20달러 가격대 및 Single-player 조건에서 36~69개 게임이 언급되었으며, 비추천 맥락이 22~34건 확인되었습니다.",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 급상승 구간이 있는지 확인합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 유저가 만족할 만한 충분한 콘텐츠 분량과 즐길 거리가 제공됩니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "10~20달러 가격대 및 Single-player 조건에서 36~67개 게임이 언급되었으며, 비추천 맥락이 21~34건 확인되었습니다.",
+      "how_to_check": "플레이 타임과 콘텐츠 밀도를 측정하여 가격대별 기대치에 부합하는지 평가합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터의 움직임과 액션 반응이 유저의 의도대로 정확하고 쾌적하게 구현되었습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "10~20달러 가격대 조건에서 34개 게임이 언급되었으며, 비추천 맥락이 21건 확인되었습니다.",
+      "how_to_check": "입력 지연(Input Lag) 여부와 조작의 반응성을 테스트합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "price_group=5-10"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "게임 내 아이템, 스킬, 적의 능력치가 특정 요소에 치우치지 않고 공정한 도전 환경을 제공합니까?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "Action 장르 및 Single-player 조건에서 26~44개 게임이 언급되었으며, 비추천 맥락이 18~33건 확인되었습니다.",
+      "how_to_check": "데이터 시뮬레이션을 통해 특정 빌드나 캐릭터가 지나치게 강력하지 않은지 확인합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "play_style=Single-player 중심",
+        "price_group=5-10"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타",
+      "check_question": "게임 출시 전 예상치 못한 기술적, 기획적 이슈가 없는지 전반적으로 재점검하였습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "10~20달러 가격대 조건에서 39개 게임이 언급되었으며, 비추천 맥락이 27건 확인되었습니다.",
+      "how_to_check": "QA 리스트에 포함되지 않은 사소한 불편 사항들을 유저 피드백을 통해 지속적으로 수집합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "steam_tag=Rogue-like"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "게임 플레이 중 발생하는 치명적인 버그나 크래시 현상을 최소화하였습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "10~20달러 가격대 및 Single-player 조건에서 38~63개 게임이 언급되었으며, 비추천 맥락이 19~29건 확인되었습니다.",
+      "how_to_check": "다양한 하드웨어 환경에서 스트레스 테스트를 진행하여 버그를 수정합니다.",
+      "source_conditions": [
+        "price_group=10-20",
+        "genre=Action",
+        "play_style=Single-player 중심"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기술 안정성",
+      "check_question": "다양한 사양의 PC 환경에서 안정적인 프레임과 성능을 유지합니까?",
+      "evidence_issue": "성능",
+      "evidence_summary": "Rogue-like 태그 조건에서 3개 게임이 언급되었으며, 비추천 맥락이 2건 확인되었습니다.",
+      "how_to_check": "최소 및 권장 사양 환경에서 프레임 드랍 여부를 측정합니다.",
+      "source_conditions": [
+        "steam_tag=Rogue-like"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "강화 요소",
+      "category": "가격 대비 가치",
+      "check_question": "현재 책정된 가격이 게임의 콘텐츠 분량과 품질에 비추어 유저에게 합리적으로 느껴집니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "5~10달러 가격대 조건에서 16개 게임이 언급되었으며, 추천 맥락이 비추천보다 많아 강화 요소로 분류되었습니다.",
+      "how_to_check": "유사 가격대 게임들과 콘텐츠 규모를 비교하여 가격 적정성을 검토합니다.",
+      "source_conditions": [
+        "price_group=5-10"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 장르 및 가격대 게임들의 초기 리뷰 데이터를 기반으로 작성되었으며, 특정 게임의 성공을 보장하지 않습니다.",
+    "데이터 분석 결과는 참고용이며, 실제 게임의 기획 의도와 핵심 재미 요소에 따라 유연하게 적용해야 합니다.",
+    "'기타' 항목은 원인 범주가 넓으므로, 실제 테스트 과정에서 발생하는 구체적인 유저 피드백을 우선적으로 확인하십시오."
+  ],
+  "final_summary": "Action Rogue-like 게임은 게임플레이 루프의 완성도가 유저 경험의 핵심입니다. 특히 반복적인 플레이가 강점인 만큼, 루프의 재미와 난이도 밸런스, UI/UX 편의성을 집중 점검하여 출시 초기 리스크를 최소화해야 합니다."
+}
