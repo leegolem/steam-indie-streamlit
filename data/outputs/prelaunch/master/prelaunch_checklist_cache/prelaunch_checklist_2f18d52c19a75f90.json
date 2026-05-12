@@ -1,0 +1,202 @@
+{
+  "title": "Action/RPG/Adventure/Casual 인디게임 출시 전 점검 체크리스트",
+  "condition_summary": "장르: Action, Casual, Adventure, RPG / 가격대: 0-5달러 / 태그 조건: 없음",
+  "data_summary": "총 57개의 유사 게임, 765개의 초기 리뷰 데이터를 분석하여 반복 이슈를 도출하였습니다.",
+  "tag_dna_summary": "현재 분석 조건에 해당하는 Steam 태그 DNA 데이터가 존재하지 않습니다. 장르별 일반적인 특성과 반복 이슈를 중심으로 점검하시기 바랍니다.",
+  "high_priority": [
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "핵심 루프",
+      "check_question": "게임의 핵심 재미 요소가 반복적이고 지루하지 않게 설계되었으며, 유저가 목표를 명확히 인지할 수 있습니까?",
+      "evidence_issue": "게임플레이 루프",
+      "evidence_summary": "Action, RPG, Adventure, Casual 장르 및 0-5달러 가격대에서 37~62개 게임(최대 85.3%)에서 반복 언급되었습니다. 비추천 맥락이 다수 포함되어 있으며, 최대 33건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "플레이 테스트를 통해 핵심 루프가 1시간 이내에 유저에게 명확히 전달되는지, 지루함이 느껴지는 구간은 없는지 확인합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "genre=RPG",
+        "genre=Adventure",
+        "genre=Casual",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "강화 요소",
+      "category": "그래픽/사운드",
+      "check_question": "게임의 시각적 스타일과 사운드가 장르적 특성에 부합하며, 유저에게 긍정적인 몰입감을 제공합니까?",
+      "evidence_issue": "그래픽/사운드",
+      "evidence_summary": "Adventure, Action, Casual 장르 및 0-5달러 가격대에서 29~49개 게임(최대 63.6%)에서 반복 언급되었습니다. 추천 맥락이 비추천보다 월등히 많으며, 보조적으로 최대 19건의 High urgency 사례가 있습니다.",
+      "how_to_check": "타겟 유저층이 선호하는 아트 스타일과 사운드 톤이 일관되게 유지되는지 검토합니다.",
+      "source_conditions": [
+        "genre=Adventure",
+        "genre=Action",
+        "genre=Casual",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "UI/UX",
+      "check_question": "메뉴 구성, 조작 안내, 인터페이스가 직관적이며 유저가 학습 없이도 쉽게 게임을 조작할 수 있습니까?",
+      "evidence_issue": "UI/UX",
+      "evidence_summary": "Adventure, Action, RPG, Casual 장르 및 0-5달러 가격대에서 25~47개 게임(최대 61.0%)에서 반복 언급되었습니다. 비추천 맥락이 상당수 포함되어 있으며, 최대 24건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "UI/UX 테스트를 통해 유저가 메뉴를 찾거나 기능을 사용하는 데 어려움을 겪지 않는지 관찰합니다.",
+      "source_conditions": [
+        "genre=Adventure",
+        "genre=Action",
+        "genre=RPG",
+        "genre=Casual",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "콘텐츠 분량",
+      "check_question": "가격 대비 적절한 플레이 타임과 콘텐츠 밀도를 제공하고 있습니까?",
+      "evidence_issue": "콘텐츠 분량",
+      "evidence_summary": "Adventure, Casual, Action, RPG 장르 및 0-5달러 가격대에서 26~46개 게임(최대 59.7%)에서 반복 언급되었습니다. 비추천 맥락이 존재하며, 최대 13건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "가격 대비 플레이 타임이 유저의 기대치를 충족하는지, 콘텐츠가 반복적이지 않은지 확인합니다.",
+      "source_conditions": [
+        "genre=Adventure",
+        "genre=Casual",
+        "genre=Action",
+        "genre=RPG",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "난이도",
+      "check_question": "게임의 난이도 곡선이 적절하며, 유저가 좌절하지 않고 도전할 수 있는 수준입니까?",
+      "evidence_issue": "난이도",
+      "evidence_summary": "Action, Adventure, RPG, Casual 장르 및 0-5달러 가격대에서 26~39개 게임(최대 54.4%)에서 반복 언급되었습니다. 비추천 맥락이 다수 포함되어 있으며, 최대 13건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "다양한 숙련도의 테스터를 통해 난이도 곡선이 급격하게 변하는 구간이 없는지 확인합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "genre=Adventure",
+        "genre=RPG",
+        "genre=Casual",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "버그",
+      "check_question": "게임 진행을 방해하는 치명적인 버그가 존재하지 않으며, 안정적인 플레이 환경을 제공합니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "RPG, Casual, Action 장르 및 0-5달러 가격대에서 19~35개 게임(최대 59.1%)에서 반복 언급되었습니다. 비추천 맥락이 존재하며, 최대 20건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "QA 테스트를 통해 주요 기능 및 진행 경로에서 발생하는 버그를 사전에 제거합니다.",
+      "source_conditions": [
+        "genre=RPG",
+        "genre=Casual",
+        "genre=Action",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "밸런스",
+      "check_question": "캐릭터 능력치, 아이템, 적의 강함 등이 게임 내에서 적절한 균형을 이루고 있습니까?",
+      "evidence_issue": "밸런스",
+      "evidence_summary": "RPG, Action 장르에서 9~26개 게임(최대 40.9%)에서 반복 언급되었습니다. 비추천 맥락이 18건에 달하며, 최대 12건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "데이터 분석 및 밸런스 테스트를 통해 특정 캐릭터나 아이템이 지나치게 강력하지 않은지 확인합니다.",
+      "source_conditions": [
+        "genre=RPG",
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "상",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "캐릭터의 움직임과 입력 반응이 의도한 대로 정확하게 작동합니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "Adventure 장르에서 36개 게임(46.8%)에서 반복 언급되었습니다. 비추천 맥락이 18건이며, 최대 20건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "다양한 입력 장치(키보드, 마우스, 패드)를 사용하여 조작 반응성을 테스트합니다.",
+      "source_conditions": [
+        "genre=Adventure"
+      ]
+    }
+  ],
+  "mid_priority": [
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "버그",
+      "check_question": "게임 진행 중 발생하는 사소한 버그나 글리치가 유저 경험을 저해하지 않습니까?",
+      "evidence_issue": "버그",
+      "evidence_summary": "Adventure, Action 장르에서 35~40개 게임(최대 51.9%)에서 반복 언급되었습니다. 비추천 맥락이 14~15건이며, 최대 24건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "비주류 경로 및 예외적인 상황에서의 버그 발생 여부를 점검합니다.",
+      "source_conditions": [
+        "genre=Adventure",
+        "genre=Action"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "조작감",
+      "check_question": "Action 장르의 특성에 맞는 정교한 조작 반응을 제공하고 있습니까?",
+      "evidence_issue": "조작감",
+      "evidence_summary": "Action 장르 및 0-5달러 가격대에서 12~34개 게임(최대 50.0%)에서 반복 언급되었습니다. 비추천 맥락이 6~16건이며, 최대 18건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "Action 장르의 핵심인 조작 반응성을 정밀하게 테스트합니다.",
+      "source_conditions": [
+        "genre=Action",
+        "price_group=0-5"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "기타 이슈 확인",
+      "check_question": "유저 리뷰에서 언급되는 기타 기술적/내용적 이슈를 주기적으로 모니터링하고 있습니까?",
+      "evidence_issue": "기타",
+      "evidence_summary": "RPG, Adventure, Casual 장르에서 29~35개 게임(최대 50.0%)에서 반복 언급되었습니다. 비추천 맥락이 14~20건이며, 최대 10건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "커뮤니티 및 리뷰 채널을 통해 유저들의 피드백을 지속적으로 수집합니다.",
+      "source_conditions": [
+        "genre=RPG",
+        "genre=Adventure",
+        "genre=Casual"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "리스크 요소",
+      "category": "저장/진행",
+      "check_question": "저장 시스템이 안정적이며, 게임 진행 상황이 유실되지 않도록 설계되었습니까?",
+      "evidence_issue": "저장/진행",
+      "evidence_summary": "RPG 장르에서 11개 게임(50.0%)에서 반복 언급되었습니다. 비추천 맥락이 5건이며, 6건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "다양한 상황에서 저장 및 불러오기 기능을 테스트합니다.",
+      "source_conditions": [
+        "genre=RPG"
+      ]
+    },
+    {
+      "priority": "중",
+      "issue_direction": "강화 요소",
+      "category": "가격 대비 가치",
+      "check_question": "현재 책정된 가격이 게임의 콘텐츠 분량과 품질에 비추어 유저에게 만족감을 줍니까?",
+      "evidence_issue": "가격/가치",
+      "evidence_summary": "Casual 장르 및 0-5달러 가격대에서 17~27개 게임(최대 37.0%)에서 반복 언급되었습니다. 추천 맥락이 비추천보다 많으며, 최대 6건의 High urgency 사례가 확인되었습니다.",
+      "how_to_check": "유사 가격대 게임들과 비교하여 콘텐츠의 양과 질이 경쟁력이 있는지 검토합니다.",
+      "source_conditions": [
+        "genre=Casual",
+        "price_group=0-5"
+      ]
+    }
+  ],
+  "low_priority": [],
+  "cautions": [
+    "본 체크리스트는 유사 장르 및 가격대 게임들의 초기 리뷰 데이터를 기반으로 작성되었습니다. 특정 이슈가 반복되었다고 해서 반드시 귀하의 게임에서도 동일한 문제가 발생한다는 의미는 아닙니다.",
+    "'강화 요소'로 분류된 항목은 유저들이 긍정적으로 평가한 지점이므로, 개발 과정에서 해당 요소의 강점을 유지하거나 더욱 발전시키는 방향으로 활용하시기 바랍니다.",
+    "'리스크 요소'는 비추천 리뷰에서 자주 언급된 지점이므로, 출시 전 집중적인 테스트와 보완이 필요합니다.",
+    "Steam 태그 DNA 데이터가 부재하므로, 장르별 일반적인 특성과 반복 이슈를 중심으로 점검하시기 바랍니다."
+  ],
+  "final_summary": "본 체크리스트는 저가형 액션/RPG/어드벤처/캐주얼 게임에서 공통적으로 나타나는 핵심 이슈를 다룹니다. 특히 '게임플레이 루프'와 'UI/UX'는 모든 장르에서 높은 비중으로 언급되므로 출시 전 최우선 점검이 필요합니다. 그래픽과 사운드는 긍정적 평가를 견인하는 요소이므로 이를 강화하고, 콘텐츠 분량과 난이도 밸런스에 대한 유저 피드백을 사전에 대비하시기 바랍니다."
+}

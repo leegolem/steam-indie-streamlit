@@ -1,0 +1,46 @@
+﻿step,before_rows,after_rows,removed_rows,removed_rate,source_run
+최소 리뷰 길이 필터,160644,112192,48452,0.3016110156619606,children_of_the_sun
+의미 있는 리뷰 필터,112192,53999,58193,0.5186911722760981,children_of_the_sun
+appid 필터,53999,1127,52872,0.979129243134132,children_of_the_sun
+출시일 시작 필터,1127,1127,0,0.0,children_of_the_sun
+언어 필터,1127,886,241,0.2138420585625554,children_of_the_sun
+Steam 라벨 필터,886,886,0,0.0,children_of_the_sun
+Steam 구매 리뷰 필터,886,886,0,0.0,children_of_the_sun
+무료 수령 리뷰 제외,886,883,3,0.0033860045146726,children_of_the_sun
+얼리액세스 리뷰 제외,883,883,0,0.0,children_of_the_sun
+최소 리뷰 길이 필터,160644,112192,48452,0.3016110156619606,endoparasitic_2
+의미 있는 리뷰 필터,112192,53999,58193,0.5186911722760981,endoparasitic_2
+appid 필터,53999,287,53712,0.994685086760866,endoparasitic_2
+출시일 시작 필터,287,287,0,0.0,endoparasitic_2
+언어 필터,287,247,40,0.1393728222996515,endoparasitic_2
+Steam 라벨 필터,247,247,0,0.0,endoparasitic_2
+Steam 구매 리뷰 필터,247,247,0,0.0,endoparasitic_2
+무료 수령 리뷰 제외,247,245,2,0.0080971659919028,endoparasitic_2
+얼리액세스 리뷰 제외,245,245,0,0.0,endoparasitic_2
+최소 리뷰 길이 필터,160644,112192,48452,0.3016110156619606,heroes_of_hammerwatch_2
+의미 있는 리뷰 필터,112192,53999,58193,0.5186911722760981,heroes_of_hammerwatch_2
+appid 필터,53999,2681,51318,0.9503509324246744,heroes_of_hammerwatch_2
+출시일 시작 필터,2681,2681,0,0.0,heroes_of_hammerwatch_2
+언어 필터,2681,2347,334,0.124580380455054,heroes_of_hammerwatch_2
+Steam 라벨 필터,2347,2347,0,0.0,heroes_of_hammerwatch_2
+Steam 구매 리뷰 필터,2347,2347,0,0.0,heroes_of_hammerwatch_2
+무료 수령 리뷰 제외,2347,2343,4,0.0017043033659991,heroes_of_hammerwatch_2
+얼리액세스 리뷰 제외,2343,2343,0,0.0,heroes_of_hammerwatch_2
+최소 리뷰 길이 필터,160644,112192,48452,0.3016110156619606,laundry_store_simulator
+의미 있는 리뷰 필터,112192,53999,58193,0.5186911722760981,laundry_store_simulator
+appid 필터,53999,817,53182,0.9848700901868552,laundry_store_simulator
+출시일 시작 필터,817,817,0,0.0,laundry_store_simulator
+언어 필터,817,580,237,0.2900856793145654,laundry_store_simulator
+Steam 라벨 필터,580,580,0,0.0,laundry_store_simulator
+Steam 구매 리뷰 필터,580,580,0,0.0,laundry_store_simulator
+무료 수령 리뷰 제외,580,575,5,0.0086206896551724,laundry_store_simulator
+얼리액세스 리뷰 제외,575,575,0,0.0,laundry_store_simulator
+최소 리뷰 길이 필터,160644,112192,48452,0.3016110156619606,necrosmith_2
+의미 있는 리뷰 필터,112192,53999,58193,0.5186911722760981,necrosmith_2
+appid 필터,53999,486,53513,0.9909998333302468,necrosmith_2
+출시일 시작 필터,486,486,0,0.0,necrosmith_2
+언어 필터,486,325,161,0.331275720164609,necrosmith_2
+Steam 라벨 필터,325,325,0,0.0,necrosmith_2
+Steam 구매 리뷰 필터,325,325,0,0.0,necrosmith_2
+무료 수령 리뷰 제외,325,324,1,0.003076923076923,necrosmith_2
+얼리액세스 리뷰 제외,324,324,0,0.0,necrosmith_2
